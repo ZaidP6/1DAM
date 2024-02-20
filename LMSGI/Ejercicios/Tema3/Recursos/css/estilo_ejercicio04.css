@@ -1,0 +1,48 @@
+@font-face {
+    font-family: carolingia;
+    src: url(../fonts/carolingia.ttf);
+}
+@font-face {
+    font-family: adelia;
+    src: url(../fonts/Autography.otf);
+}
+body {
+    background-color: rgb(120, 206, 240);
+    text-align: center;
+}
+
+.fuente1 {
+    font-family: 'Lugrasimo', 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+.fuente2 {
+    font-family: 'carolingia', 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+    
+}
+
+.fuente3 {
+    font-family: 'adelia', 'Times New Roman', Times, serif;
+    font-size: 4em;
+}
+
+div, p.centro {
+    width: 100%;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 4em;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(90deg, rgba(180,163,58,1) 0%, rgba(253,29,29,1) 50%, rgba(69,80,252,1) 100%);
+}
+a{
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

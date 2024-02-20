@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06.2</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        legend {
+            color: red;
+            top: 20px;
+        }
+
+        fieldset:hover {
+           background-color: #FF9;
+        }
+
+        fieldset {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+        input:focus{
+            outline: none;
+            border: #E6B700 3px solid;
+        }
+        label {
+            display: inline-block;
+            min-width: 150px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .ordenar {
+            display: flex;
+            flex-direction: column;
+        }
+
+        fieldset>div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        fieldset>div>p {
+            font-size: 8pt;
+            color: grey;
+            margin-top: 2px;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de alta</h1>
+    <form name="registro" action="" method="post" autocomplete enctype="multipart/form-data">
+        <fieldset class="ordenar">
+            <label>Nombre y apellidos <span class="red">*</span></label>
+            <div>
+                <input type="text" name="nombre" id="nombre" required>
+                <p>Nombre</p>
+                <br />
+            </div>
+            <div>
+                <input type="text" name="apellido1" id="apellido1">
+                <p>Primer apellido</p>
+                <br />
+            </div>
+            <div>
+                <input type="text" name="apellido2" id="apellido2">
+                <p>Segundo apellido</p>
+                <br />
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

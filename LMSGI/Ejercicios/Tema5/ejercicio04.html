@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio04</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            flex-direction: column;
+            width: 51px;
+            height: 200px;
+            list-style-position: inside;
+            padding-left: 0%;
+        }
+        nav ul a{
+            flex: 1 1 20%;
+            background-image: url("./Recursos/img/menu-04_invert.png");
+            background-repeat: no-repeat;
+            width: 51px;
+            height: 51px;
+        }
+        nav ul .home{
+            background-position: 0px top;
+            
+        }
+        nav ul .home:hover{
+            background-position: -51px top;
+            border-radius: 20pt;
+        }
+        nav ul .new{
+            background-position: 0px -51px;
+        }
+        nav ul .new:hover{
+            background-position: -51px -51px;
+            border-radius: 20pt;
+
+        }
+        nav ul .edit{
+            background-position: 0px -102px;
+        }
+        nav ul .edit:hover{
+            background-position: -51px -102px;
+            border-radius: 20pt;
+
+        }
+        nav ul .view{
+            background-position: 0px -153px;
+        }
+        nav ul .view:hover{
+            background-position: -51px -153px;
+            border-radius: 20pt;
+
+        }
+        nav ul .see{
+            background-position: 0px -204px;
+        }
+        nav ul .see:hover{
+            background-position: -51px -204px;
+            border-radius: 20pt;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a class="home"><li></li></a>
+            <a class="new"><li></li></a>
+            <a class="edit"><li></li></a>
+            <a class="view"><li></li></a>
+            <a class="see"><li></li></a>
+        </ul>
+    </nav>
+</body>
+</html>

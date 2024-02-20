@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>PC Regalo</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		body{
+			margin: 0px;
+		}
+
+		/*ESTILOS PARA EL EJERCICIO 1*/				
+		nav{
+			position: fixed;
+			top: 0px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		nav>ul>div{
+			background-color: lightblue;
+			background-image: url('img/logo_ejercicio1.png');
+			background-repeat: no-repeat;
+			flex: 0 0 155px; /*también puede usarse width: 155px;*/
+			height: 92px;
+			padding: 3px;
+			transition:flex-basis 0.5s; /*cambiar por width si se ha usado esa propiedad*/
+
+		}
+		nav>ul>div:hover{
+			/*width: 393px;*/
+			flex: 0 0 393px;
+		}
+		
+		nav>ul{
+			padding-left: 0px;
+			margin: 0px;
+			list-style-type: none;
+			flex: 0 0 50%; /*width: 50%;*/	
+			background-color: lightblue;
+			display: flex;
+		}
+		
+		nav li{
+			background-color: lightblue;
+			color: #0762f4;
+			list-style-type: none;
+			font-size: 16pt;
+			font-family: Arial;
+			text-align: center;
+			
+			flex: 0 0 180px; /*width: 180px;*/
+			height: 25px;
+			padding: 38px 10px 35px 10px;		
+			
+		}
+	
+		nav li:hover{
+			color: white;
+			background-color: #023484;
+		}
+
+		/*ESTILOS PARA EL EJERCICIO 2*/
+		footer{
+			position: fixed;
+			bottom: 0px;
+			height: 200px;
+			width: 100%;
+			background-color: lightblue; 
+			/*el EJERCICIO 3 consiste en añadir la siguiente línea*/
+			background-image: linear-gradient(to right, lightblue, #023484);
+			
+			display: flex;
+			align-items: flex-end;
+			flex-direction: column;
+			text-align: right;	
+		}
+		footer p{
+			width: 20%;
+			font-family: "Comic Sans MS";
+			font-size: 12pt;
+			padding-right: 20px;
+		}
+		footer p+p{
+			background-color: #023484;
+			color: white;
+			border-radius: 15px;
+			/*aquí empiezan los cambios para el ejercicio 2*/
+			/*position: relative;
+			right: -23%;*/
+			transform: translateX(100%); /*se puede hacer con transform-translate o modificando el posicionamiento, ambos son correctos*/
+			transition: all 0.5s;
+		}
+
+		footer p:hover+p{
+			/*right: 1%;*/
+			transform: translateX(0%);
+		}
+		
+	</style>
+</head>
+<body>
+
+	<!--HTML PARA EL EJERCICIO 1. No puedes modificar este código, ni siquiera para añadir clases o id-->
+	<nav>
+		<ul>	
+			<div></div>
+			<li>INICIO</li>		
+		</ul>
+		<ul>			
+			<li>Buscar</li>		
+			<li>Contacto</li>
+			<li>Productos</li>		
+		</ul>
+	</nav>
+
+	
+	<h1>Nombre y Apellidos</h1>
+
+<!--HTML PARA EL EJERCICIO 2 y 3. No puedes modificar este código, ni siquiera para añadir clases o id-->
+	<footer>
+		<p><img src="img/iconoWhatsapp.png"></p>
+		<p>Si quieres hablar con nosotros, escríbenos un whatsapp al 666333444 o un correo a info@pcregalo.com</p>
+	</footer>
+</body>
+</html>

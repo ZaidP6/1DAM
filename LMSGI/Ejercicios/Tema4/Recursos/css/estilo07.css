@@ -1,0 +1,31 @@
+body{
+    background-color:  rgb(96, 147, 243) ;
+    }
+    p{
+    text-align: center;
+    align-items: baseline;
+    }
+    main{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    }
+    img{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .divimg{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(29, 166, 225);
+        border: 5px solid black;
+        border-radius: 15px;
+        margin: 2%;
+        padding: 4px 0px;
+        width: 300px;
+        height: 250px;
+    }

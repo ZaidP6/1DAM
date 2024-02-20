@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio10-op2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            width: 100%;
+            background: rgb(12, 102, 155);
+        }
+
+        #btn-menu {
+            display: none;
+
+        }
+
+        header label {
+            display: none;
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+            border-right: 1px solid #fff;
+        }
+
+        header label:hover {
+            cursor: pointer;
+            background: rgb(56, 181, 212, 3);
+        }
+
+        .menu ul {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .menu li {
+            flex-grow: 1;
+            text-align: center;
+            border-right: 1px solid rgba(255, 255, 255,3);
+        }
+
+        .menu li:hover {
+            background: rgb(56, 181, 212, 3);
+        }
+
+        .menu li a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media(max-width:768px) {
+            header label {
+                display: block;
+            }
+
+            .menu {
+                position: absolute;
+                background: rgb(12, 102, 155);
+                width: 50%;
+                margin-left: -70%;
+                transition: all 0.8s;
+            }
+
+            .menu ul {
+                flex-direction: column;
+            }
+
+            .menu li {
+                border-top: #fff 1px solid;
+            }
+
+            #btn-menu:checked~.menu {
+                margin: 0;
+            }
+            i{
+                font-size: 1.8em;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="bi bi-list-task"></i></label>
+        <nav class="menu">
+            <ul>
+                <li><a href=""></a>Inicio</li>
+                <li><a href=""></a>Categorías</li>
+                <li><a href=""></a>Contacto</li>
+                <li><a href=""></a>Servicios</li>
+            </ul>
+
+        </nav>
+    </header>
+</body>
+
+</html>

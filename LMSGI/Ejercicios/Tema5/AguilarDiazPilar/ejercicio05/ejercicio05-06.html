@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio05</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            width: 85%;
+            margin: 0 auto;
+            background-color: rgba(136, 214, 218, 255);
+        }
+
+        /*header{}*/
+
+        header h1 {
+            width: 100%;
+            color: greenyellow;
+            background-color: grey;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0px;
+        }
+
+        nav ul a {
+            flex: 1 1 auto;
+            background-color: rgba(64, 189, 195, 255);
+            color: rgb(255, 255, 255);
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border: transparent 5px;
+            border-bottom-width: 0px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px;
+            font-size: 15pt;
+            border-bottom-width: 0px;
+            margin: 2px;
+        }
+
+        main {
+            border: 5px #40bdc3 rgba(64, 189, 195, 255) solid;
+            padding: 2%;
+            margin-top: 0px;
+            display: flex;
+        }
+
+        nav ul a:first-child {
+            border-left-width: 0px;
+        }
+
+
+        nav ul a:last-child {
+            border-right-width: 0px;
+        }
+
+        nav ul a.activa {
+            background-color: rgb(255, 255, 255);
+            color: black;
+
+        }
+
+       
+
+        div .con1{
+           width: 35%;
+            display: flex;
+            justify-content: space-around;
+        }
+        div .con2{
+           width: 35%;
+            display: flex;
+            justify-content:center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <a href="ejercicio05-00.html">
+                <li>Home</li>
+            </a>
+            <a href="ejercicio05-01.html">
+                <li>Quiénes somos</li>
+            </a>
+            <a href="ejercicio05-02.html">
+                <li>Dónde estamos</li>
+            </a>
+            <a href="ejercicio05-03.html">
+                <li>Noticias</li>
+            </a>
+            <a href="ejercicio05-04.html">
+                <li>Descargas</li>
+            </a>
+            <a href="ejercicio05-05.html">
+                <li>Galería de fotos</li>
+            </a>
+            <a href="ejercicio05-06.html" class="activa">
+                <li>Contacto</li>
+            </a>
+
+        </ul>
+    </nav>
+    <main>
+        <div class="con1">
+            <h1>Contacto</h1>
+        <p>
+            Centralita: 954 613 897
+        </p>
+        <p>Móvil: 606 102 870</p>
+        <p>Fax: 954 610 600</p>
+        <h1>
+            Horario
+        </h1>
+        <h3>
+            Invierno (16 septiembre – 14 junio):
+        </h3>
+        <p>
+            Mañanas: de 9:00 a 14:30h
+        </p>
+        <p> Tardes: de 17:00 a 20:00h</p>
+        <p>Viernes: de 9.00 a 15.00h.</p>
+        <p>Atención telefónica a partir de las 10:00h.</p>
+        <h3>
+            Verano (15 junio – 15 septiembre):
+        </h3>
+        <p>
+            Mañanas: de 8:00 a 15:00h
+        </p>
+        <p>
+            Atención telefónica a partir de las 9:00h.
+        </p>
+        </div>
+        <div class="con2">
+            <h1>Emails de contacto</h1>
+            <p>Secretario General: <a href="mmartin@famotos.com">mmartin@famotos.com</a></p>
+            <p>Gabinete de Prensa: <a href=" prensa@famotos.com"> prensa@famotos.com</a></p>
+            <p>Inscripciones/Contabilidad: <a href="info@famotos.com">info@famotos.com</a></p>
+            <p>Licencias/Reglamentos/Médicos: <a href=" anamaria@famotos.com"> anamaria@famotos.com</a></p>
+        </div>
+
+    </main>
+</body>
+
+</html>

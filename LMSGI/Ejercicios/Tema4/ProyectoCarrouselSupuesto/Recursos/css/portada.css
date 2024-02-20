@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Streetbomber";
+    src: url(../Recursos/Fonts/Streetbomber.ttf);
+}
+
+@font-face {
+    font-family: "Anger Styles";
+    src: url(../Recursos/Fonts/AngerStyles.ttf);
+}
+
+@font-face {
+    font-family: "Philosopher-Regular";
+    src: url(../Recursos/Fonts/Philosopher-Regular.ttf);
+}
+p{
+    text-align: justify;
+    word-spacing: 2pt;
+    margin: 0 auto;
+}
+body{
+    background-color: rgb(185, 185, 185,0.8);
+    margin: 0.5%;
+    background-repeat: no-repeat;
+    background: url(../Imagenes/fondo.jpg);  
+    background-size: cover;  
+}
+main{
+    margin: 3px;
+    padding: 5px;
+}
+.image{
+    margin: 1%;
+}
+.footer0{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer1{
+    overflow: hidden;
+    width: 30%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: hsla(0, 0%, 68%, 0.8);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    align-self: 10px flex-end; 
+    height: 56px;
+}
+.footer2{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: 10px flex-end;
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+    background-color: rgb(173, 173, 173,0.8);
+    align-items: center;
+}

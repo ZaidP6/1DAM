@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio02</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        legend {
+            color: red;
+            top: 20px;
+        }
+
+        fieldset{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label{
+            display: inline-block;
+            min-width: 150px;
+            margin: 10px;
+        }
+
+        .ordenar{
+            display: flex;
+            flex-direction: row;
+        }
+
+        fieldset>div{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        input>#aficiones{
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form name="registro" action="" method="post" autocomplete enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Su nombre">
+            <br />
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required placeholder="Su apellido">
+            <br />
+            <label for="apellido">Email</label>
+            <input type="mail" name="email" id="email" required placeholder="Su email">
+            <br />
+            <label for="user">Nombre usuario</label>
+            <input type="text" name="user" id="user" required placeholder="Su nombre de usuario">
+            <br />
+            <label for="cont">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña">
+            <br />
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo" value="M">Masculino
+            <input type="radio" name="sexo" value="F">Femenino<br />
+        </fieldset>
+        <br />
+        <label for="fnac">Fecha de nacimiento</label>
+        <input type="date" id="fnac" name="fechaNacmiento" min="1900-01-01" max="2024-12-31">
+        <br />
+        <fieldset class="ordenar">
+            <legend>Aficiones</legend><br />
+            <div>
+                <p><input type="checkbox" name="aficion1" id="aficiones" checked="Jugar videojuegos">Jugar videouegos</p>
+                <p><input type="checkbox" name="aficion2" id="aficiones">Streamear en Twitch</p>
+                <p><input type="checkbox" name="aficion3" id="aficiones">Hacer deporte</p>
+            </div>
+            <div>
+                <p><input type="checkbox" name="aficion4" id="aficiones">Programar</p>
+                <p><input type="checkbox" name="aficion5" id="aficiones">Mirar Wallapop</p>
+                <p><input type="checkbox" name="aficion6" id="aficiones">Escuchar música</p>
+            </div>
+            <div>
+                <p><input type="checkbox" name="aficion7" id="aficiones">Rutita con la moto</p>
+                <p><input type="checkbox" name="aficion8" id="aficiones">Ir de compras</p>
+                <p><input type="checkbox" name="aficion9" id="aficiones">Crear una web</p>
+            </div>
+            <div>
+                <p><input type="checkbox" name="aficion10" id="aficiones">Viajar</p>
+                <p><input type="checkbox" name="aficion11" id="aficiones">Comer</p>
+                <p><input type="checkbox" name="aficio12" id="aficiones">Leer</p>
+            </div>
+        </fieldset>
+        <br />
+        <input type="submit" name="enviar" value="enviar">
+    </form>
+</body>
+
+</html>

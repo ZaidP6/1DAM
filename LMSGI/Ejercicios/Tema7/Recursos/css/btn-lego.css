@@ -1,0 +1,142 @@
+@function em($pixels) {
+    @if not (unit($pixels) == 'px') {
+      @error 'Property #{$pixels} must have `px` unit.';
+    }
+    
+    @return $pixels / 16px * 1em;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    justify-items: center;
+    align-content: center;
+    gap: 1em 2em;
+  }
+  
+  .toggle-container,
+  .checkbox-container,
+  .radio-container {
+    --inactive-color: #a0a5a9;
+    position: relative;
+  
+    &.toggle-container {
+      width: em(50px);
+    }
+  
+    &.radio-container {
+      border-radius: 50%;
+    }
+  
+    &.round {
+      border-radius: em(50px);
+    }
+  
+    &.red {
+      --active-color: #c91a09;
+    }
+  
+    &.blue {
+      --active-color: #0055bf;
+    }
+  
+    &.yellow {
+      --active-color: #f2cd37;
+    }
+  }
+  
+  .toggle-input,
+  .checkbox-input,
+  .radio-input {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    border-radius: inherit;
+    cursor: pointer;
+  }
+  
+  .toggle-track {
+    --color: var(--inactive-color);
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    box-shadow: inset 0 em(1px) em(2px) rgb(0 0 0 / .2);
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+  
+    .toggle-input:checked + & {
+      --color: var(--active-color);
+    }
+  }
+  
+  .lego-plate {
+    $size: em(25px);
+    position: relative;
+    width: $size;
+    height: $size;
+    background-color: var(--color);
+    box-shadow: (
+      inset em(1px) em(1px) rgba(255 255 255 / .3),
+      inset em(-1px) em(-1px) rgba(0 0 0 / .3),
+    );
+    transition-property: background-color, transform;
+    transition-duration: .2s, .4s;
+    transition-timing-function: linear, ease-in-out;
+  
+    .toggle-container.round &,
+    &.radio-dot {
+      border-radius: 50%;
+    }
+      
+    .toggle-input:checked + .toggle-track > &.toggle-thumb {
+      transform: translateX(100%);
+    }
+    
+    .checkbox-container &,
+    .radio-container & {
+      --color: var(--inactive-color);
+    }
+    
+    .checkbox-input:checked + &,
+    .radio-input:checked + & {
+      --color: var(--active-color);
+    }
+  }
+  
+  .lego-plate-top {
+    $size: em(15px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    background-color: var(--color);
+    box-shadow: (
+      inset em(1px) em(1px) rgba(255 255 255 / .3),
+      inset em(-1px) em(-1px) rgba(0 0 0 / .3),
+    );
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+  }
+  
+  .lego-plate-top-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: em(10px);
+    fill: rgb(255 255 255 / .4);
+  }

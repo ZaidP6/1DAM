@@ -1,0 +1,120 @@
+/*COLORES DEL DOCUMENTO
+
+	FONDOS AMARILLOS: #FEDC00	
+
+	LETRAS BLANCAS SOBRE FONDO AMARILLO: 
+	color: white;
+
+	LETRAS AMARILLAS SOBRE FONDO BLANCO:
+	color: #b39b00;
+
+  
+*/
+
+body{
+	font-family: Calibri;
+	width: 85%;
+	max-width: 1200px;
+	min-width: 700px;
+	margin: 0 auto;
+
+}
+
+
+nav>ul{
+	list-style-type: none;
+	font-size: 16pt;
+	text-align: center;	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 17px;
+	height: 60px;
+	background-color: #FEDC00;
+	color: white;
+	
+}
+div.grande{
+	display: flex;
+	flex-direction: row;
+}
+section{
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+img{
+	width: 100%;
+}
+article{
+	display: flex;
+	flex-direction: column;
+	background-color: #FEDC00;
+	width: 30%;
+	margin: 1%;
+	border-radius: 15px;
+	align-items: center;
+	
+}
+main{
+	width: 80%;
+}
+aside{
+	margin: 10px;
+	list-style-type: none;
+	font-size: 16pt;
+	height: 120px;
+	padding: 5%;
+	width: 20%;
+	color: #b39b00;
+}
+
+h3{
+	font-size: 20pt;
+	font-weight: normal;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+h4{
+	font-size: 10pt;
+	font-weight: normal;
+	margin-top: 4px;
+	margin-bottom: 4px;
+
+}
+
+article>p.textodescrip{
+	font-size: 12pt;
+}
+article>p.textoprecio{
+	font-size: 12pt;
+	text-align: right;
+}
+article>p.textoboton{
+	font-size: 12pt;
+	width: 50%;
+	background-color: white;
+	border-radius: 5px;
+}
+
+footer{
+	background-color: #FEDC00;
+	color: white;
+	text-align: center;
+	font-size: 12pt;
+	width: 100%;
+}
+div.publi{
+	border: #FEDC00 1px solid;
+	border-radius: 15px;
+	height: 50%;
+	text-align: center;
+}
+
+
+
+
+

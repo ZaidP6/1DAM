@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01</title>
+    <style type="text/css">
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            border: 2px black solid; 
+            border-radius: 150px ;  
+            padding: 0 ;
+            background-image:url(../Recursos/img/fondoNav01.jpg), url(../Recursos/img/fondoNav02.avif);
+            
+        }
+        header>h1{
+            text-align: center;
+        }
+        li{
+            list-style-type: none;
+            width: 100%;
+            padding:5px;
+            text-align: center;
+        }
+        ul li:hover{
+            background-image: url(../Recursos/img/fondoNav02.avif);
+            color: white;
+        }
+        li:first-child{
+            border-bottom-left-radius: 150px;
+            border-top-left-radius: 150px;
+        }li:last-child{
+            border-bottom-right-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+        li:first-child:hover{
+            border-bottom-left-radius: 150px;
+            border-top-left-radius: 150px;
+        }li:last-child:hover{
+            border-bottom-right-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+        li>a{
+            color: rgb(255, 255, 255);
+        }
+        li>a:visited{
+            color: rgb(255, 230, 0);
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HEADER PAG WEB</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

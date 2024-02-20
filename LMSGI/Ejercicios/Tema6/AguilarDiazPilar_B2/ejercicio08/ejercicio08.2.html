@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 08.2</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            background-color: rgb(91, 232, 126);
+        }
+        main{
+            width: 100%;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            width:50%;
+            margin-bottom: 20px;
+            border-radius: 25pt;
+            padding: 10px;
+            background: rgb(11,212,196);
+            background: linear-gradient(180deg, rgba(11,212,196,1) 0%, rgba(9,9,138,1) 47%, rgba(0,212,255,1) 100%);
+        }
+        .titulo{
+            font-weight: 1000;
+            font-size: 180%;
+            padding: 5px;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+        fieldset:first-child>div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+        fieldset:last-child>div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+        }
+        fieldset>div>label{
+            color: rgba(255, 255, 255);
+            width: max-content;
+            padding: 5px;
+            border-radius: 5;
+            margin-bottom: 10px;
+            font-size: 15pt;
+            
+        }
+        #numH{
+            width: 50px;
+        }
+        fieldset>div>input{
+            border: none;
+            border-bottom: black 4px solid;
+            background-color: transparent;
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+        fieldset>div>input[type="text"]:focus{
+            border: none;
+            background-color: rgba(239, 223, 168, 0.087);
+        }
+        select{
+            border: none;
+            background-color: rgba(255, 255, 255, 0.457);
+        }
+        fieldset:first-child>div>input{
+            margin-left: 10%;
+            width: 80%;
+            color: white;
+            min-height:35px ;
+            font-size: 15pt;
+        }
+
+        fieldset:last-child>div:last-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        fieldset:last-child>div:last-child{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            
+        }
+        fieldset:last-child>div:last-child>input{
+            height: 50px;
+            width: 200px;
+            background-color: rgb(196, 88, 16);
+            border: none;
+            color: white;
+            border-radius: 25px;
+            font-size: 20pt;
+        }
+        .requerido{
+            color: red;
+        }
+        input, select{
+            color: rgb(255, 255, 255);
+            font-size: 12pt;
+            
+        }
+        select:focus{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            font-size: 30pt;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        fieldset>label:first-child{
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 25pt;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Hotel las tinieblas</h1>
+        <form name="registroHab2"  autocomplete>
+            <fieldset>
+                <label for="contacto" class="titulo">Contacto</label>
+                <div>
+                    <label for="name" id="name">Nombre <span class="requerido">*</span></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="lstname">Apellidos <span class="requerido">*</span></label>
+                    <input type="text" name="lstname" id="lastname" required>
+                </div>
+                <div>
+                    <label for="dni">DNI <span class="requerido">*</span></label>
+                    <input type="text" name="dni" id="dni" required>
+                </div>
+                <div>
+                    <label for="email">Email <span class="requerido">*</span></label>
+                    <input type="email" name="email" id="email" required>                
+                </div>
+                <div>
+                    <label for="tlfn">Teléfono <span class="requerido" required>*</span></label>
+                    <input type="n" name="tlfn" id="tlnf">
+                </div>
+                <div>
+                    <label for="direccion">Dirección</label><input type="text" name="direccion" id="direccion">
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="habitacion" class="titulo">Habitación</label>
+                <div>
+                    <label for="hab">Habitación <span class="requerido">*</span></label>
+                    <select name="hab" id="hab" size="1" required>
+                        <option value="dob" selected>Doble</option>
+                        <option value="mat">Matrimonio</option>
+                        <option value="kid">Niños</option>
+                        <option value="lit">Literas</option>
+                        <option value="pre">Premium</option>
+                        <option value="eco">Económica</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="numH">Número de Huéspedes <span class="requerido">*</span></label>
+                    <input type="number" name="numHuesped" id="numH" min="1" max="6" required>
+                </div>
+                <div>
+                    <label for="fechain">Fecha de entrada <span class="requerido">*</span></label>
+                    <input type="date" name="fechain" id="fechain" required>
+                </div>
+                <div>
+                    <label for="fechaout">Fecha de salida <span class="requerido">*</span></label>
+                    <input type="date" name="fechaout" id="fechaout" required>
+                </div>
+                <div>
+                    <input type="submit" value="enviar" name="enviar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

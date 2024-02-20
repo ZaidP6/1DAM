@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Ejercicio09</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		body{
+			margin: 0px;
+		}			
+		nav{
+			position: fixed;
+			top: 0px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		nav>ul>div{
+			background-color: lightblue;
+			background-image: url('./Recursos/img/pccomponentes.png');
+			background-repeat: no-repeat;
+			flex: 0 0 75px;
+			height: 94px;
+			padding: 3px;
+			transition:flex-basis 0.5s;
+
+		}
+		nav>ul>div:hover{
+			flex: 0 0 248px;
+		}
+		
+		nav>ul{
+			padding-left: 0px;
+			margin: 0px;
+			list-style-type: none;
+			flex: 0 0 50%;
+			background-color: lightblue;
+			display: flex;
+		}
+		
+		nav li{
+			background-color: lightblue;
+			color: #0762f4;
+			list-style-type: none;
+			font-size: 16pt;
+			font-family: Arial;
+			text-align: center;
+			
+			flex: 0 0 180px;
+			height: 25px;
+			padding: 38px 10px 35px 10px;		
+			
+		}
+		nav li:hover{
+			color: white;
+			background-color: #023484;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>	
+			<div></div>
+			<li>INICIO</li>		
+		</ul>
+		<ul>			
+			<li>Buscar</li>		
+			<li>Contacto</li>
+			<li>Productos</li>		
+		</ul>
+	</nav>
+</body>
+</html>

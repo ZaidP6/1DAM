@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio08</title>
+    <style type="text/css">
+        :root{
+            --cada-item: 53px;
+            --cantidad-items: 0;
+        }
+
+        body{
+            display: flex;
+            min-height: 100vh;
+            margin:0;
+            font-family: Arial;
+            font-size: 16px;
+            gap: 30px;
+        }
+        nav ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            line-height: 40px;
+        }
+
+        nav ul li{
+            border-bottom: 1px solid #0778b9;
+        }
+
+        nav ul a{
+            box-sizing: border-box;
+            color: white;
+            background: #0778b9;
+            display: block;
+            width: 100%;
+            padding: 6px 10px;
+            text-decoration: none;
+        }
+
+        nav ul ul{
+            height: 0px;
+            overflow: hidden;
+            transition: 0.3s;
+            counter-reset: items;
+        }
+        nav ul ul li{
+            counter-increment: items;
+        }
+
+
+        nav ul li:hover ul{
+            height: calc( var(--cantidad-items) * var(--cada-item) );
+
+            background: rgb(18, 180, 209); 
+
+            /*
+            height: 100%;
+            max-height: calc( counter(items) * var(--cada-item) );
+            */
+        }
+
+
+        nav ul ul a{
+            background: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a>
+                <ul style="--cantidad-items: 4">
+                    <li><a href="#">SubItem 1</a></li>
+                    <li><a href="#">SubItem 2</a></li>
+                    <li><a href="#">SubItem 3</a></li>
+                    <li><a href="#">SubItem 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a>
+                <ul style="--cantidad-items: 3">
+                    <li><a href="#">SubItem 1</a></li>
+                    <li><a href="#">SubItem 2</a></li>
+                    <li><a href="#">SubItem 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item 5</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

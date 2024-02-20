@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5.3</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+
+
+        header h1 {
+            width: 100%;
+            height: 300px;
+            padding-top: 150px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(72, 16, 104);
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0px;
+        }
+
+        nav ul a {
+            flex: 1 1 auto;
+            background-color: rgb(171, 153, 255);
+            color: rgb(169, 59, 241);
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border: white solid 5px;
+            border-bottom-width: 0px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px;
+            font-size: 15pt;
+            border-bottom-width: 0px;
+        }
+
+        main {
+            border: 5px rgb(171, 153, 255) solid;
+            padding: 2%;
+            margin-top: 0px;
+        }
+
+        nav ul a:first-child {
+            border-left-width: 0px;
+        }
+
+
+        nav ul a:last-child {
+            border-right-width: 0px;
+        }
+
+        nav ul a.activa {
+            background-color: aliceblue;
+            border-color: rgb(171, 153, 255);
+        }
+
+        main section {
+            display: none;
+        }
+
+        main section:target {
+            display: inherit;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>CARIDAD DE LOS PRÍNCIPES</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="../html/Ejercicio_05.1.html#Inicio">
+                <li>INICIO</li>
+            </a>
+            <a href="../html/Ejercicio_05.2.html#QUIENES SOMOS">
+                <li>QUIENES SOMOS</li>
+            </a>
+            <a href="../html/Ejercicio_05.3.html#DONDE ESTAMOS" class="activa" >
+                <li>DÓNDE ESTAMOS</li>
+            </a>
+            <a href="../html/Ejercicio_05.4.html#NOTICIAS">
+                <li>NOTICIAS</li>
+            </a>
+            </a>
+            <a href="../html/Ejercicio_05.5.html#DESCARGAS" >
+                <li>DESCARGAS</li>
+            </a>
+            </a>
+            <a href="../html/Ejercicio_05.6.html#GALERIA" >
+                <li>GALERÍA DE FOTOS</li>
+            </a>
+            </a>
+            <a href="../html/Ejercicio_05.7.html #CONTACTO">
+                <li>CONTACTO</li>
+            </a>
+
+        </ul>
+    </nav>
+    <main>
+        <section id="INICIO">
+            <p>Nuestra Agrupación de Fieles</p>
+
+            <p>Fundación: Esta Agrupación de Fieles fue fundada en el año 2003 por un grupo de amigos.</p>
+
+            <p>Los estatutos de la misma fueron aprobados en enero de 2004 y después de los grandes esfuerzos
+                realizados por parte de los promotores de esta idea y de todos los que creyeron en ella, ese mismo año,
+                sábado 23 de Octubre de 2004, procesionaria por primera vez por las calles de su barrio y alrededores
+                Ntro. Padre Jesús de la Caridad en su Tercera Caída.</p>
+
+            <p>El paso de Cristo se adquiere por la compra a la Hermandad del Polígono de San Pablo de Sevilla y la
+                banda de cornetas y tambores que lo acompañaría sería Presentación al Pueblo de Dos Hermanas.</p>
+
+            <p>¿Cómo nace la idea?: El promotor de dicha idea es D. Moisés Peña Martínez, quien siguiendo los pasos
+                anteriores de su hermano mayor Vicente Peña, fundador de la Cruz de Mayo de la misma barriada en 1987 y
+                posteriormente del paso de la Amargura de Los Príncipes en 1989. Éste reunió a cinco amigos para
+                aventura. Una vez aprobada la idea, decidieron hablar con Vicente Peña para que se uniese a ellos, pero
+                éste debido a sus compromisos le fue imposible sumarse a dicho proyecto y les advirtió de tan difícil
+                tarea y de las dificultades que se encontrarían a lo largo del camino. Vicente se ofreció para ayudarles
+                en todo lo que estuviese en su mano.</p>
+
+            <p>Fundadores: La fundan seis amigos; Moisés Peña Martínez, Raúl Jiménez Peña, Alberto Manuel Zapata Gómez,
+                Marcos Martínez Fuentes, Ángel Montes Bernal y Manuel Jesús Montes Bernal.</p>
+        </section>
+
+        <section id="QUIENES SOMOS">
+            <p>Juntas Directivas: En la actualidad, la Humilde Agrupación de Fieles está regida por la cuarta Junta
+                Directiva que se hace cargo de la misma. Aquí queremos reseñar y darle las gracias por su esfuerzo y
+                compromiso a las anteriores Juntas Directivas a través de sus Presidentes: 1º D. Moisés Peña Martínez,
+                2º D. Emilio José González Ríos, 3º D. Agustín Torremocha Martín y 4º D. Manuel Rodríguez Borreguero.
+            </p>
+
+            <p>JUNTA DIRECTIVA ACTUAL</p>
+
+            <li>Manuel Rodríguez Borreguero</li>
+
+            <li>Vicepresidente: Damián Pereira Cabrera</li>
+
+            <li>Secretario: Toma el cargo en funciones la Vicepresidencia</li>
+
+            <li>Tesorero: Santiago Ochoa Fernández</li>
+
+            <li>Prioste: Rubén Solís Ruivo</li>
+
+            <li>Fiscal: Manuel Rodríguez Pérez</li>
+            </p>
+
+        </section>
+
+        <section id="DONDE ESTAMOS">
+            <p>Dirección Humilde Agrupación de Fieles:</p>
+
+            <p>Bda. Los Príncipes, Parcela 4, Bloque 3, Local 1. (Referencia: C/ Camino de Cantalobos).</p>
+            <p><img src="../img/MAPS.PNG" width="40%" alt="mapa"></p>
+
+        </section>
+
+        <section id="NOTICIAS">
+            <p>Desde el año 2013, un objetivo marcado desde el corazón de esta Agrupación de Fieles no era otro que la
+            de desempeñar una Acción Social a la altura del barrio donde nos encontramos. Viendo las necesidades
+            patentes de las familias que nos venían a pedir ayuda, decidimos apostar por conseguir que la Fundación
+            Banco de Alimentos de Sevilla se fijase en nosotros como una asociación seria, rigurosa y comprometida
+            con los criterios de evaluación de las familias a ayudar.</p>
+
+            <p> En 2014 ellos así lo entendieron y nos aceptaron como Entidad Colaboradora. Desde entonces se comienza a
+            correr la voz de que hay una asociación en el barrio que se dedica a ayudar a familias sin recursos.</p>
+
+             <p>Seleccionamos familias del barrio con la ayuda inconmensurable de las trabajadoras sociales de dos
+            centros públicos de educación obligatoria, que no disponen de ningún recurso o escasean de los mismos y
+            los ayudamos con una entrega mensual de alimentos no perecederos.</p>
+
+            <p>Siempre es escasa la ayuda, pero no nos queda otra que ejercer la caridad en un barrio tan desolado como
+            en el que nos encontramos.</p>
+
+            <P>Es muy recurrente aportar momentos fotográficos que avalan esta labor (los tenemos), pero preferimos
+            obviarlos para preservar el derecho a la intimidad que tienen las familias. Bastante calamidad y
+            vergüenza pasan a la hora de pedir para que encima las tengamos reflejadas públicamente.</p>
+
+
+        </section>
+        <section id="DESCARGAS">
+           <a href="#"><p>Pulse aquí para descargar el formulario de hermano</p></a>
+            
+        </section>
+        <section id="GALERIA">
+           <img src="../img/CARIDAD.jpg" width="25%" alt="caridad">
+           <img src="../img/DESCONSUELO.jpg" width="25%" alt="DESCONSUELO">
+        </section>
+        <section id="CONTACTO">
+            <p>Facebook: Caridad y Desconsuelo de los Príncipes</p>
+            <p>Twitter: @Caridad_Descons</p>
+            <p>Instagram: caridadydesconsuelo</p>
+            <p>YouTube: Caridad Desconsuelo</p>
+            <p>E-mail: caridadydesconsuelosprincipes@gmail.com</p>
+        </section>
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>

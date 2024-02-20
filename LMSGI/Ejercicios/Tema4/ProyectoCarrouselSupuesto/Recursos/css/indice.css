@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Philosopher-Regular";
+    src: url(../Recursos/Fonts/Philosopher-Regular.ttf);
+}
+body{
+    background-color: rgb(185, 185, 185);
+    margin: 0.5%;
+    background-repeat: no-repeat;
+    background: url(../Imagenes/fondo.jpg);  
+    background-size: cover;    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Philosopher-Regular', Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;   
+}
+header img{
+    border-radius: 5px;
+}
+h1{
+    font-size: 60px;
+}
+ol{
+    font-size: 40px;
+}
+p{
+    text-align: justify;
+    word-spacing: 2pt;
+    margin: 0 auto;
+    
+}
+.divMainAside{
+    display: flex;
+    height: 100%;
+}
+main{
+    width: 80%;
+    padding: 1.5%;
+    border: 0.5%;
+    margin: 5px;
+    background-image: url(../Img/mapa_kanto.jpeg);
+    background-color: rgba(247, 181, 116,0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    background-size: 100%;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    width: 28%; 
+    margin: auto;   
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+}
+main img{
+    display: block;
+    width: 35%;
+    border-radius: 20px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding: 1.5%;
+    border: 0.5%;
+    margin: 5px;
+    background-color: rgb(244, 202, 125,0.8);
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+aside div img{
+    border-radius: 20px;
+    margin: auto;
+}
+.footer0{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: 'Philosopher-Regular', Arial, Helvetica, sans-serif;
+}
+.footer1{
+    overflow: hidden;
+    width: 30%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: hsla(0, 0%, 68%, 0.8);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    align-self: 10px flex-end; 
+    height: 56px;
+    font-family: 'Philosopher-Regular', Arial, Helvetica, sans-serif;
+}
+.footer2{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: 10px flex-end;
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+    background-color: rgb(173, 173, 173,0.8);
+    align-items: center;
+    font-family: 'Philosopher-Regular', Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+     
+        fieldset {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 150px;
+            margin: 10px;
+        }
+
+        fieldset>div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        fieldset>div>p {
+            font-size: 8pt;
+            color: grey;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario Time, datetime-local, range</h1>
+    <form name="registro" action="" method="post" autocomplete enctype="multipart/form-data">
+        <fieldset class="ordenar">
+            <div>
+                
+                <label for="appt">Selecciona la hora:</label>
+                <input type="time" name="hora" id="hora" value="12:00" step="120">
+                <label for="nacimiento">Fecha nacimiento(fecha y hora):</label>
+                <input type="datetime-local" name="fechahora" id="fechahora" value="2018-06-12T19:30">
+                <label for="puntos">Puntos (De 0 a 10 / Rango de 2 en 2):</label>
+                <input type="range" id="rango" name="rango" value="6" step="2" min="0" max="10">
+
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

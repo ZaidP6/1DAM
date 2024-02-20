@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'MexicanTequila';
+    src: url(../fonts/MexicanTequila.ttf);
+}
+@font-face {
+    font-family: 'Candy_Pop';
+    src: url(../fonts/Candy_Pop!-demo-font.ttf);
+}
+@font-face {
+    font-family: 'Sketch3D';
+    src: url(../fonts/Sketch\ 3D.otf);
+}
+@font-face {
+    font-family: 'Autography';
+    src: url(../fonts/Autography.otf);
+}
+@font-face {
+    font-family: 'Kawaii';
+    src: url(../fonts/Kawaii\ Stitch.ttf);
+}
+@font-face {
+    font-family: 'Party';
+    src: url(../fonts/PartybyTom.TTF);
+}
+@font-face {
+    font-family: 'Ballon';
+    src: url(../fonts/BigBallon-Regular.ttf);
+}
+@font-face {
+    font-family: 'Super Summer';
+    src: url(../fonts/Super\ Summer\ Personal\ Use.ttf);
+}
+@font-face {
+    font-family: 'Super Milk';
+    src: url(../fonts/Super\ Milk.ttf);
+}
+@font-face {
+    font-family: 'granesta';
+    src: url(../fonts/Granesta.ttf);
+}
+body{
+    text-align: center;
+    background-color: rgb(238, 230, 154);
+}
+p{
+    letter-spacing: 80px;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12em;
+    text-shadow: rgb(94, 151, 8) 5px 5px ;
+}
+hr{
+    color: black 40px;
+}
+.letraRR{
+    font-family: 'Super Summer', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.letraX{
+    font-family: 'Super Milk', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.letraLL{
+    font-family: 'granesta', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em ;
+}
+.letraCh{
+    font-family:'Ballon', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+
+.font1{
+    font-family: 'Candy_Pop', Arial, Helvetica, sans-serif;
+    font-size: 9em;
+    color: blue;
+}
+.font2{
+    font-family: 'MexicanTequila', Arial, Helvetica, sans-serif;
+    font-size: 11em;
+    color: rgb(53, 99, 8);
+}
+.font3{
+    font-family:'Ballon', Arial, Helvetica, sans-serif;
+    font-size: 12em;
+    color: rgb(233, 11, 11);
+}
+.font4{
+    font-family: 'Sketch3D', Arial, Helvetica, sans-serif;
+    font-size: 11em;
+    color: rgb(94, 14, 168);
+}
+.font5{
+    font-family: 'Party', Arial, Helvetica, sans-serif;
+    font-size: 10em;
+    color: rgb(11, 187, 119);
+}
+.font6{
+    font-family: 'Kawaii', Arial, Helvetica, sans-serif;
+    font-size: 10em;
+    color: black;
+}
+p.centro{
+    text-align: center;
+    letter-spacing: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+
+}

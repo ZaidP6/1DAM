@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ejercicio 03.2</title>
+		<style type="text/css">
+        
+		body{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 50%;
+		}
+        fieldset {
+            margin: 0px;
+            border: 0px solid transparent;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .red {
+            color: red;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 150px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .bloque1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bloque2 {
+            display: flex;
+            flex-direction: row;
+            margin-right: 10px;
+            
+        }
+		.bloque3 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bloque4 {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        div.submit {
+            text-align: right;
+        }
+
+       
+        p{
+            font-size: 9pt;
+            color: rgb(56, 56, 56);
+            margin-top: 2px;
+        }
+        
+    </style>
+	</head>
+
+	<body>
+		<h1>Formulario de alta</h1>
+		<form name="registro" autocomplete>
+			<div class="bloque2">
+				<fieldset>
+					<div><label>Nombre y apellidos <span class="red">*</span></label></div>
+					<div>
+
+						<div>
+							<input type="text" name="nombre" id="nombre" required>
+							<p>Nombre</p>
+
+						</div>
+						<div>
+							<input type="text" name="apellido1" id="apellido1" required>
+							<p>Primer apellido</p>
+
+						</div>
+						<div>
+							<input type="text" name="apellido2" id="apellido2" required>
+							<p>Segundo apellido</p>
+
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<div><label>Dirección <span class="red">*</span></label></div>
+					<div class="bloque1">
+
+						<div class="bloque4">
+							<input type="text" name="calle" id="calle" required>
+							<p>Calle, número, piso, puerta</p>
+						</div>
+						<div class="bloque2">
+							<div class="bloque3">
+								<div class="bloque4">
+									<input type="text" name="CP" id="CP">
+									<p>Código Postal</p>
+								</div>
+								<div class="bloque4">
+									<input type="text" name="Municipio" id="Municipio">
+									<p>Municipio</p>
+								</div>
+							</div>
+							<div class="bloque3">
+								<div>
+									<select id="provincia" name="provincia">
+										<option value></option>
+										<option value="provincia1">Sevilla</option>
+										<option value="provincia2">Cádiz</option>
+										<option value="provincia3">Córdoba</option>
+									</select>
+									<p>Provincia</p>
+								</div>
+								<div>
+									<select id="pais" name="pais">
+										<option value></option>
+										<option value="pais1">España</option>
+										<option value="pais2">Spain</option>
+										<option value="pais3">Andorra</option>
+									</select>
+									<p>País</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<div class="bloque2">
+				<fieldset>
+					<div><label for="email">Email</label></div>
+					<div>
+
+						<input type="mail" name="email" id="email" required>
+
+					</div>
+				</fieldset>
+				<fieldset>
+					<div><label>Teléfono <span class="red">*</span></label></div>
+					<div class="bloque2">
+						<div class="bloque4">
+							<input type="tel" name="fijo" id="fijo">
+							<p>Fijo</p>
+						</div>
+						<div class="bloque4">
+							<input type="tel" name="movil" id="movil">
+							<p>Móvil</p>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<div class="submit"><input type="submit" name="Darme de alta"
+					value="Darme de alta"></div>
+		</form>
+	</body>
+</html>

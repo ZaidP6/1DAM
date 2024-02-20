@@ -1,0 +1,58 @@
+header{
+    text-align: center;
+    border: 1px red solid;
+    
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 1px red solid;
+    }
+    nav>ul>li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+    .divgrande{
+        display: flex;
+        flex-direction: row;
+        border: 1px red solid;
+    
+    }
+    aside{
+        width: 30%;
+        border: 1px red solid;
+    }
+    main{
+        width: 70%;
+        text-align: center;
+        border: 1px red solid;
+    
+    }
+    main>div{
+        border: 1px rgb(0, 255, 34) solid;
+        display: flex;
+        justify-content: space-between;
+    }
+    main>div>.flecha{
+        width: 10%;
+        border: 1px black solid;
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        border: 1px rgb(0, 47, 255) solid;
+        
+    }
+    footer{
+        background-color: gray;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-end;   
+        position: absolute;
+        bottom: 0px;
+    }

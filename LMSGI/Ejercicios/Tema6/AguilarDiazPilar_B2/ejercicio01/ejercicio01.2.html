@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio01</title>
+    <style type="text/css">
+        fieldset{
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            margin: 2%;
+            display: flex;
+            flex-direction: row;
+        }
+        label{
+            width: 20%;
+            margin-right: 20%;
+        }
+        input{
+            width: 60%;
+            min-height:35px ;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required value="">
+            </div>
+            <div>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" required value="">
+            </div>
+            <div>
+                <label for="nombre">Edad</label>
+                <input type="number" id="edad" required min="0" max="120" value="">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" required value="">
+            </div>
+            <div>
+                <label for="url">Navegador favorito</label>
+                <input type="url" id="url" required value="">
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio05</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            width: 85%;
+            margin: 0 auto;
+            background-color: rgba(136, 214, 218, 255);
+        }
+
+        /*header{}*/
+
+        header h1 {
+            width: 100%;
+            color: greenyellow;
+            background-color: grey;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0px;
+        }
+
+        nav ul a {
+            flex: 1 1 auto;
+            background-color: rgba(64, 189, 195, 255);
+            color: rgb(255, 255, 255);
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border: transparent 5px;
+            border-bottom-width: 0px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px;
+            font-size: 15pt;
+            border-bottom-width: 0px;
+            margin: 2px;
+        }
+
+        main {
+            border: 5px #40bdc3 rgba(64, 189, 195, 255) solid;
+            padding: 2%;
+            margin-top: 0px;
+        }
+
+        nav ul a:first-child {
+            border-left-width: 0px;
+        }
+
+
+        nav ul a:last-child {
+            border-right-width: 0px;
+        }
+
+        nav ul a.activa {
+            background-color: rgb(255, 255, 255);
+            color: black;
+
+        }
+
+        main section {
+            display: none;
+        }
+
+        main section:target {
+            display: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <a href="ejercicio05-00.html">
+                <li>Home</li>
+            </a>
+            <a href="ejercicio05-01.html">
+                <li>Quiénes somos</li>
+            </a>
+            <a href="ejercicio05-02.html">
+                <li>Dónde estamos</li>
+            </a>
+            <a href="ejercicio05-03.html" class="activa">
+                <li>Noticias</li>
+            </a>
+            <a href="ejercicio05-04.html">
+                <li>Descargas</li>
+            </a>
+            <a href="ejercicio05-05.html">
+                <li>Galería de fotos</li>
+            </a>
+            <a href="ejercicio05-06.html">
+                <li>Contacto</li>
+            </a>
+
+        </ul>
+    </nav>
+ 
+    <main>
+        <h1>
+            ANDALUCÍA, DE NUEVO PRESENTE EN EL MARCO INTERNACIONAL Y EUROPEO ESTE 2023
+        </h1>
+        <h5>
+            24 de enero de 2023
+        </h5>
+        <img src="../Recursos/img/4SGJLWTG7JLMVNXNQ3BURSGEBE.avif" width="100%" alt="Campeón levantando trofeo">
+        <p>
+            Se espera un buen año de motociclismo para Andalucía. Los nuestros abordarán la temporada con ganas, muchos
+            de ellos repitiendo en Mundiales y Europeos, otros estrenándose por primera vez en el panorama
+            internacional. Cada vez son más los andaluces que dan el salto a campeonatos superiores, en la élite del
+            motociclismo, pasando por MotoGP, WorldSBK, FIM JuniorGP, EnduroGP o el Europeo de Motocross, entre otros.
+            Desde la Federación Andaluza de Motociclismo estaremos atentos a todo lo que acontezca en el contexto de
+            estos campeonatos, también de los nacionales de las distintas disciplinas, en las que la armada andaluza
+            está presente en un elevadísimo porcentaje.
+        </p>
+    </main>
+ 
+</body>
+
+</html>

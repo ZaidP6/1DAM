@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>PC Regalo</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<style type="text/css">	
+		
+		/*NO TOCAR ESTOS ESTILOS*/
+		body{
+			margin: 0px;
+		}
+		a{
+			text-decoration: none;
+		}
+
+		nav{
+			position: fixed;
+			top: 0px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		nav>div{
+			flex: 0 0 50%; /*width: 50%;*/	
+			background-color: lightblue;
+			display: flex;
+		}
+
+		nav>div.izq>div#logo{
+			background-color: lightblue;
+			background-image: url('img/logo.png');
+			background-repeat: no-repeat;
+			flex: 0 0 155px; 
+			height: 92px;
+			padding: 3px;
+			transition:flex-basis 0.5s;
+		}
+
+		nav>div.izq>div#logo:hover{			
+			flex: 0 0 393px;
+		}
+
+		nav li, nav i{
+			background-color: lightblue;
+			color: #0762f4;
+			list-style-type: none;
+			font-size: 16pt;
+			font-family: Arial;
+			text-align: center;			
+			flex: 0 0 180px; /*width: 180px;*/
+			height: 25px;
+			padding: 38px 10px 35px 10px;	
+		}
+			
+		nav>div.dcha{
+			justify-content: flex-end;
+			
+		}
+
+		nav>div.izq>li:hover{
+			color: white;
+			background-color: #023484;
+		}
+
+		nav>div.dcha>i{
+			flex-basis: 80px; /*width: 50px;*/			
+			font-size: 2.5em;
+			text-align: left;
+		}
+
+		div#content{
+			position: fixed;
+			top: 98px;
+			width: 100%;		
+		}
+		/*FIN DE ESTILOS QUE NO DEBES TOCAR*/
+		/*ESTILOS PARA EL EJERCICIO 1*/
+
+		
+	
+		div#content>aside>a:hover{
+			color: white;
+			background-color: #023484;
+		}
+		div#content>aside>a{
+			background-color: lightblue;
+			color: #0762f4;
+			list-style-type: none;
+			font-size: 16pt;
+			font-family: Arial;
+			display: flex;
+			flex-direction: column;
+			height: 75px;
+
+			
+		}
+		div#content>aside{
+			height: 800px;
+			width: 20%;
+			justify-content: space-between;
+		}
+
+		div#content{
+			display: flex;
+			flex-direction: row;
+			
+		}
+		
+
+
+		/*FIN ESTILOS PARA EL EJERCICIO 1*/
+
+		/*ESTILOS PARA EL EJERCICIO 2*/
+		main{
+			width: 80%;
+			position:relative;
+			top: 1000px;
+			left: 1000px;
+		}
+		main>section:active+img{
+			position: relative;
+			top:0px;
+			left:0px;
+			transition: all 0.9s;
+		}
+
+		/*FIN ESTILOS PARA EL EJERCICIO 2*/
+		
+		/*ESTILOS PARA EL EJERCICIO 3*/
+
+		div.dcha>li:hover + i{
+			transform: rotateX(45deg);
+			transition: 0.5s;
+			transform: rotateX('-45deg');
+			transition: 0.5s;
+		}
+
+		/*FIN ESTILOS PARA EL EJERCICIO 3*/
+		
+	</style>
+</head>
+<body>
+	<!--CÓDIGO PARA EL EJERCICO 3. NO TOQUES ESTE CÓDIGO. NO PUEDES AÑADIR NADA, NI SIQUIERA CLASES NI IDS-->
+	<nav>
+		<div class="izq">	
+			<div id="logo"></div>
+			<li>INICIO</li>
+		</div>
+		<div class="dcha">					
+			<li>Contacto</li>
+			<i class="bi bi-phone-vibrate"></i>
+			
+		</div>
+	</nav>
+	<!-- CÓDIGO PARA LOS EJERCICIOS 1, 2 Y 4. NO PUEDES AÑADIR ETIQUETAS NUEVAS, SOLO PUEDES AÑADIR CLASES O IDS. TAMBIÉN PUEDES EDITAR LAS RUTAS DE LOS ENLACES DEL ASIDE-->
+	<div id="content">
+		<aside>
+			<a href="#ordenadores"><li>Ordenadores</li></a>
+			<a href="#perifericos"><li>Periféricos</li></a>
+			<a href="#monitores"><li>Monitores</li></a>
+			<a href="#gaming"><li>Gaming</li></a>
+			<a href="redes"><li>Redes</li></a>
+			<a href="impresoras"><li>Impresoras</li></a>
+		</aside>
+		<main>
+			<section id="ordenadores">
+				<img src="img/ordenadores.png">
+			</section>
+			<section id="perifericos">
+				<img src="img/perifericos.png">
+			</section>
+			<section id="monitores">
+				<img src="img/monitores.png">
+			</section>
+			<section id="gaming">
+				<img src="img/gaming.png">
+			</section>
+			<section id="redes">
+				<img src="img/redes.png">
+			</section>
+			<section id="impresoras">
+				<img src="img/impresoras.png">
+			</section>
+		</main>		
+	</div>
+</body>
+</html>

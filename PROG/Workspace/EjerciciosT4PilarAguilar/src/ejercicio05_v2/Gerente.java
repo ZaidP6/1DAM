@@ -1,0 +1,29 @@
+package ejercicio05_v2;
+
+public class Gerente extends Empleado{
+
+	private double porImpuesto;
+
+	public Gerente(int nEmpleado, String nombre, String apellido, double sueldoBase, double porImpuesto) {
+		super(nEmpleado, nombre, apellido, sueldoBase);
+		this.porImpuesto = porImpuesto;
+	}
+
+	public double getPorImpuesto() {
+		return porImpuesto;
+	}
+
+	public void setPorImpuesto(double porImpuesto) {
+		this.porImpuesto = porImpuesto;
+	}
+
+	@Override
+	public String toString() {
+		return "Gerente [porImpuesto=" + porImpuesto + ", toString()=" + super.toString() + "]";
+	}
+	
+	public double calcularSueldo() {
+		return super.calcularSueldo() - super.calcularSueldo()*porImpuesto;
+	}
+	
+}

@@ -1,0 +1,42 @@
+header{
+    background-image:url(../img/TIENDA\ gaming.png);
+    border-color: rgb(10, 117, 117);
+}
+main{
+    background-color: aqua;
+    border: rgb(11, 41, 75), 5px, solid;
+    width: 60%;
+    text-align: justify;
+    padding: 2%;
+}
+aside{
+    background-color: blueviolet;
+    width: 20%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly
+
+}
+.aside1{
+    text-align: justify;
+    padding: 4px;
+}
+h1{
+    text-align: center;
+    flex: 1 1 auto; 
+}
+div.grande{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer{
+    background-color: rgb(31, 75, 75);
+}

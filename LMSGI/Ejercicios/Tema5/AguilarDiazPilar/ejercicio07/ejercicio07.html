@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio07</title>
+    <style type="text/css"> 
+
+    nav>ul{
+        display: flex;
+        list-style-type:none;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 0
+    }
+    nav>ul li{
+        flex: 1 1 25%;
+        text-align: center;
+        justify-content: center;
+        border-color: rgb(0, 0, 0);
+        border-style: solid;
+        border-width: 0 5px;
+        background-color: rgb(47, 141, 179);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        height: 50px;
+        transition: all 3s 0.5s;
+        justify-content: space-between;
+        
+    }
+    nav>ul>li>ul>li{
+        height: 0px;
+        overflow: hidden;
+        transition: height 1.5s, font-size 0.2s;
+        border-color: rgba(255, 255, 255, 0);
+    }
+    nav>ul>li:hover>ul>li{
+        height: 50px;
+    }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>Deportes de raqueta
+                    <ul>
+                        <li>Pádel</li>
+                        <li>Tenis</li>
+                        <li>Tenis de mesa</li>
+                        <li>Badminton</li>
+                        <li>Squash</li>
+                    </ul>
+                </li>
+                <li>Deportes de balón
+                    <ul>
+                        <li>Fútbol</li>
+                        <li>Baloncesto</li>
+                        <li>Rugby</li>
+                        <li>Balonmano</li>
+                        <li>Fútbol americano</li>
+                    </ul>
+                </li>
+                <li>Deportes en el agua
+                    <ul>
+                        <li>Natación</li>
+                        <li>Piragua</li>
+                        <li>Remo</li>
+                        <li>Pádelsurf</li>
+                        <li>Surf</li>
+                    </ul>
+                </li>
+                <li>Deportes sobre ruedas
+                    <ul>
+                        <li>Cliclismo</li>
+                        <li>Motociclismo</li>
+                        <li>Motocross</li>
+                        <li>Patinetes</li>
+                        <li>Skate</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+    </html>
