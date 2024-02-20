@@ -1,0 +1,22 @@
+git init nombre_carpeta
+git status
+$ echo 'My Project' > README
+git add <file>
+$ git add README
+git checkout -- <file> to discard changes in working directory
+Get-ChildItem
+dir
+ls -hidden
+$ git diff
+$ git diff --staged
+$ git commit
+git config --global core.editor
+$ git commit -m
+git commit -a
+git rm
+$ git rm --cached
+$ git mv file_from file_to
+git log -3
+git log --stat
+$ git commit --amend
+$ git remote -v
