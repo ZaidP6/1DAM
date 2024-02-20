@@ -1,0 +1,99 @@
+E0 A X r E1
+
+E1 A A r E1
+E1 B B r E1
+E1 C C r E1
+E1 _ $ r E2
+
+
+E2 _ A l E3
+
+E3 A A l E3
+E3 B B l E3
+E3 C C l E3
+E3 X _ r E4
+E3 $ $ l E3
+
+E4 A X r E5
+
+E5 $ $ r E5
+E5 A A r E5
+E5 B B r E5
+E5 C C r E5
+E5 _ A l E3
+
+----------------------------
+
+E0 A X r E1A
+E0 B X r E1B
+E0 C X r E1C
+E0 X X r E0
+E0 _ S * HALT
+
+E1A B B r E1A
+E1A A X r E3
+E1A _ N * HALT
+E1A X X r E1A
+
+E1B B X l E4
+E1B A A r E3B
+E1B C C r E3B
+E1B _ N * HALT
+E1B X X r E1B
+
+E1C B X l E4
+E1C A A r E0
+E1C C C r E0
+E1C _ N * HALT
+E1C X X r E1B
+
+E3 B X l E4
+E3 A A r E3
+E3 C C r E3
+E3 _ _ l E4
+
+E4 B B l E4
+E4 A A l E4
+E4 C C l E4
+E4 _ _ r E0
+E4 X X l E4
+
+--------------------------
+
+E0 A X r E1A
+E0 B X r E1B
+E0 C X r E1C
+E0 X X r E0
+E0 _ S * HALT
+
+
+E1A A X l E2
+E1A B B r E1A
+E1A C C r E1A
+E1A _ N * HALT
+E1A X X r E1A
+
+E1B B X l E2
+E1B A A r E1B
+E1B C C r E1B
+E1B _ N * HALT
+E1B X X r E1B
+
+E1C C X l E2
+E1C B B r E1C
+E1C A A r E1C
+E1C _ N * HALT
+E1C X X r E1C
+
+
+E2 A A l E2
+E2 B B l E2
+E2 C C l E2
+E2 X X l E2
+E2 _ _ r E3
+
+E3 A X r E1A
+E3 B X r E1B
+E3 C X r E1C
+E3 X X r E0
+
