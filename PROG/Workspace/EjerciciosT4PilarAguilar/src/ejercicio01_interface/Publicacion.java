@@ -1,5 +1,7 @@
 package ejercicio01_interface;
 
+import java.util.Iterator;
+
 public abstract class Publicacion implements IBiblioteca{
 
 	
@@ -50,7 +52,12 @@ public abstract class Publicacion implements IBiblioteca{
 	//Métodos
 	
 		@Override
-	public abstract int cuentaPrestados(Publicacion[] lista);
-	public abstract int publicacionesAnterioresA(Publicacion[] lista, int anio);
+	public int cuentaPrestados(Publicacion[] lista) {
+			for
+			return 0;
+		}
+	public int publicacionesAnterioresA(Publicacion[] lista, int anio) {
+		
+	}
 	
 }

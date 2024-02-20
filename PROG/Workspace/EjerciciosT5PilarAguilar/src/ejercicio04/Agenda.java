@@ -47,7 +47,7 @@ public class Agenda {
 	public Contacto findByName(String nombre) {
 		boolean encontrado = false;
 		Contacto a = null;
-		Iterator<Contacto> it = lista;
+		Iterator<Contacto> it = (Iterator<Contacto>) lista;
 		
 		
 		
