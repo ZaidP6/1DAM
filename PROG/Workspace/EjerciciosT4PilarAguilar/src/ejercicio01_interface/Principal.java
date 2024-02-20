@@ -24,6 +24,13 @@ public class Principal {
 
 		listaPublicaiones = new Publicacion[4];
 		listaPublicaiones[0] = publicaion1;
+		listaPublicaiones[1] = publicaion2;
+		listaPublicaiones[2] = publicaion3;
+		listaPublicaiones[3] = publicaion4;
+		
+		
+		
+		
 
 		
 	}
