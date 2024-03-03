@@ -6018,6 +6018,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  height: 500px;
 }
 
 .carousel.pointer-event {
@@ -6028,11 +6029,13 @@ textarea.form-control-lg {
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: 500px;
 }
 .carousel-inner::after {
   display: block;
   clear: both;
   content: "";
+  
 }
 
 .carousel-item {
@@ -6040,10 +6043,11 @@ textarea.form-control-lg {
   display: none;
   float: left;
   width: 100%;
-  margin-right: -100%;
+  margin-right: 0%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+  height: 600px;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -6100,7 +6104,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 8%;
   padding: 0;
   color: #fff;
   text-align: center;
@@ -6167,14 +6171,15 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-right: 15%;
+  margin-right: 8%;
   margin-bottom: 1rem;
-  margin-left: 15%;
+  margin-left: 8%;
+  
 }
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 30px;
+  width: 25px;
   height: 3px;
   padding: 0;
   margin-right: 3px;
