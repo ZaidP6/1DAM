@@ -1,169 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="./Recursos/Fotos Peugeot 405/favicon.ico"
-            type="image/x-icon"> <!-- Favicon -->
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <!-- Iconos -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./Recursos/Fotos Peugeot 405/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Iconos -->
 
-        <link rel="stylesheet" href="./Recursos/css/bootstrap.min.css">
-        <!-- Tema -->
+    <link rel="stylesheet" href="./Recursos/css/bootstrap.min.css">
+    <!-- Tema -->
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet" /> <!-- CDN Bootstrap -->
-        <title>Club Peugeot 405</title>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CDN Bootstrap -->
+    <title>Club Peugeot 405</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CDN Bootstrap -->
 
-    </head>
+</head>
 
-    <body class="p-3 m-0 border-0 bd-example m-0 border-0 bg-body">
+<body id="inicio" class="p-3 m-0 border-0 bd-example m-0 border-0 bg-dark-subtle">
 
-        <!-- Menu -->
+    <!-- Menu -->
 
-        <nav class="navbar navbar-expand-lg sticky-top bg-dark"
-            data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#inicio"><img
-                        src="./Recursos/Fotos Peugeot 405/logoclub2[1].jpg"
-                        alt="Bootstrap" width="15%"> Club Peugeot 405</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#menu"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#historia">Historia</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#modelos"
-                                role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Modelos
-                            </a>
-                            <ul class="dropdown-menu"
-                                style="background-color: #cbe1f1">
-                                <li><a class="dropdown-item"
-                                        href="#modeloGL">Gama GL</a></li>
-                                <li><a class="dropdown-item"
-                                        href="#modeloGR">Gama GR</a></li>
-                                <li><a class="dropdown-item"
-                                        href="#modeloSR">Gama SR</a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="#modeloMi16">Gama
-                                        Mi16</a></li>
-                                <li><a class="dropdown-item"
-                                        href="#modeloCompeticion">Competición</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="#datosTecticos">Datos Técnicos</a></li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg fixed-top py-3 navbar-shrink bg-dark" data-bs-theme="dark">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand" href="#inicio"><img src="./Recursos/Fotos Peugeot 405/logoclub2[1].jpg"
+                    alt="Bootstrap" width="15%"> Club Peugeot 405</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto my-2 mb-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#modelos" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Modelos
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #cbe1f1">
+                            <li><a class="dropdown-item" href="#modeloGL">Gama GL</a></li>
+                            <li><a class="dropdown-item" href="#modeloGR">Gama GR</a></li>
+                            <li><a class="dropdown-item" href="#modeloSR">Gama SR</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#modeloMi16">Gama
+                                    Mi16</a></li>
+                            <li><a class="dropdown-item" href="#modeloCompeticion">Competición</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#datosTecticos">Datos Técnicos</a></li>
+                </ul>
             </div>
-        </nav>
-        <!-- End Menu -->
+        </div>
+    </nav>
+    <!-- End Menu -->
 
-        <header id="cabecera" class="container">
-            <!-- Start Portada -->
-            <div class="bg-light row justify-content-center">
-                <div class="col-12 m-1">
+    <header id="cabecera" class="bg-danger mx-3 border border-2 border-primary rounded-2">
+        <!-- Start Portada -->
+        <div id="carouselHeader" class="container-fluid px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-10 text-center">
                     <div id="inicio" class="bg-info">
-                        <h1 class="text-center">Bienvenidos a nuestro Club!</h1>
-                    </div>
-                    <div id="carousel" class="carousel slide carousel-fade">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img
-                                    src="Recursos/Fotos Peugeot 405/sainz-loeb-dakar-2015-peugeot.jpg"
-                                    class="d-block w-100"
-                                    alt="...">
+
+                        <div id="carousel" class="carousel slide carousel-fade">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Recursos/Fotos Peugeot 405/sainz-loeb-dakar-2015-peugeot.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Recursos/Fotos Peugeot 405/renault-pikes-peak[1].jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Recursos/Fotos Peugeot 405/Fotos oficiales/unnamed.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Recursos/Fotos Peugeot 405/Fotos oficiales/4giluuf[1].jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Recursos/Fotos Peugeot 405/Fotos oficiales/43nkae0[1].jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Recursos/Fotos Peugeot 405/Fotos oficiales/405_8.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Recursos/Fotos Peugeot 405/Fotos oficiales/34qn2ux[1].jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="Recursos/Fotos Peugeot 405/renault-pikes-peak[1].jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="Recursos/Fotos Peugeot 405/Fotos oficiales/unnamed.jpg"
-                                    class="d-block w-100"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="Recursos/Fotos Peugeot 405/Fotos oficiales/4giluuf[1].jpg"
-                                    class="d-block w-100"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="Recursos/Fotos Peugeot 405/Fotos oficiales/43nkae0[1].jpg"
-                                    class="d-block w-100"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="Recursos/Fotos Peugeot 405/Fotos oficiales/405_8.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="Recursos/Fotos Peugeot 405/Fotos oficiales/34qn2ux[1].jpg"
-                                    class="d-block w-100"
-                                    alt="...">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"
-                                aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button"
-                            data-bs-target="#carousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"
-                                aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
-            <!-- End Portada -->
+        </div>
+        <!-- End Portada -->
 
-        </header>
-        <main class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 m-1">
+    </header>
+    <main class="page-item">
+        <div class="row justify-content-center">
+            <div class="col-12 m-1">
 
-                    <!-- Start Historia -->
-                    <div class="m-auto">
-                        <div id="historia">
-                            <h1>La Historia</h1>
-                        </div>
-                        <div>
-                            <div>
-                                <p>
-                                    El Peugeot 405 es un automóvil del segmento
+                <!-- Start Historia -->
+                <section id="historia"
+                    class="page-item my-5 py-5 mx-3 bg-body border border-2 border-primary rounded-2">
+                    <div class="m-auto container px-4 px-lg-5 py-5 justify-content-center">
+                        <h1 class="text-center">La Historia</h1>
+                        <div class="row gx-4 gx-lg-5">
+                            <div class="col-md-12 col-lg-12">
+                                <h6 class="text-center ">
+                                    El <span class="fw-bold">Peugeot 405</span> es un automóvil del segmento
                                     D producido
                                     por el fabricante francés Peugeot.
-                                </p>
+                                </h6>
                                 <p>
                                     Diseñado por el estudio Pininfarina, se
                                     construyó en
@@ -174,10 +145,10 @@
                                     numerosas versiones según los niveles de
                                     equipamiento
                                     disponibles sobre 4 bases principales
-                                    denominadas GL,
-                                    GR, SR y ST, además de las 2 versiones
-                                    deportivas, Mi16
-                                    y T16, y el modelo familiar "Break".
+                                    denominadas <span class="fw-bold">GL,GR, SR y ST</span>
+                                    , además de las 2 versiones
+                                    deportivas, <span class="fw-bold">Mi16
+                                        y T16</span>, y el modelo familiar "Break".
                                 </p>
                                 <p>
                                     Las siglas GL ("Grand Large") correspondían
@@ -222,16 +193,19 @@
                                     combinaciones.
                                 </p>
                             </div>
+
                         </div>
                     </div>
+                </section>
 
-                    <!-- End Historia -->
+                <!-- End Historia -->
 
-                    <!-- Start Models -->
+                <!-- Start Models -->
 
-                    <div id="modelos" class="row row-cols-1 row-cols-md-3 g-4">
+                <section id="modelos" class="mx-3 bg-body border border-2 border-primary rounded-2">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 m-2">
                         <div class="col">
-                            <div class="card">
+                            <div class="card bg-dark-subtle mb-3 border-3 rounded-2">
                                 <a href="#gamaGL"><img
                                         src="./Recursos/Fotos Peugeot 405/Fotos oficiales/peugeot-405.jpg"
                                         class="card-img-top" alt="...">
@@ -245,9 +219,8 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
-                                <img
-                                    src="./Recursos/Fotos Peugeot 405/Fotos oficiales/Peugeot_405_Break_1_bcd[1]16.9.jpg"
+                            <div class="card bg-dark-subtle mb-3 border-3 rounded-2">
+                                <img src="./Recursos/Fotos Peugeot 405/Fotos oficiales/Peugeot_405_Break_1_bcd[1]16.9.jpg"
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Gama GR</h5>
@@ -260,9 +233,8 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
-                                <img
-                                    src="./Recursos/Fotos Peugeot 405/Fotos oficiales/Peugeot_405_SRI_1992.16.9.jpg"
+                            <div class="card bg-dark-subtle mb-3 border-3 rounded-2">
+                                <img src="./Recursos/Fotos Peugeot 405/Fotos oficiales/Peugeot_405_SRI_1992.16.9.jpg"
                                     class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Gama SR</h5>
@@ -279,16 +251,14 @@
                     </div>
 
                     <div>
-                        <hr class="divider">
+                        <hr class="divider ">
                     </div>
 
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-2">
                         <div class="col">
-                            <div class="card">
-                                <img
-                                    src="./Recursos/Fotos Peugeot 405/Fotos oficiales/Mi16 Le Mans 2.jpg"
-                                    class="card-img-top"
-                                    alt="...">
+                            <div class="card bg-dark-subtle mb-3 border-3 rounded-2 mx-3">
+                                <img src="./Recursos/Fotos Peugeot 405/Fotos oficiales/Mi16 Le Mans 2.jpg"
+                                    class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Gama Mi16</h5>
                                     <p class="card-text">Las siglas Mi16 hace
@@ -300,10 +270,8 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
-                                <img
-                                    src="./Recursos/Fotos Peugeot 405/pikespeak01.jpg"
-                                    class="card-img-top" alt="...">
+                            <div class="card bg-dark-subtle mb-3 border-3 rounded-2 mx-3">
+                                <img src="./Recursos/Fotos Peugeot 405/pikespeak01.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Gama Competición</h5>
                                     <p class="card-text">En la década de los 80
@@ -317,48 +285,55 @@
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <!-- End Models -->
+                <!-- End Models -->
 
-                    <div id="gamaGL" class="container">
-                        <div class="row">
-                            <div class="row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                                <h3>Peugeot 405 GL</h3>
-                                <p>
-                                    La gama GL constituía la gama básica de
-                                    precio más económico de todo el catálogo.
-                                    Tenían un equipamiento mínimo y
-                                    se ofrecía con dos motorizaciones, una de
-                                    gasolina y una diésel denominada GLD.
-                                </p>
-                                <p>
-                                    Estéticamente no contaban con detalles y
-                                    eran muy sencillos. Las molduras de las
-                                    puertas eran muy finas y sin cromados,
-                                    algunos elementos como los retrovisores o
-                                    las manetas de las puertas eran de plástico
-                                    sin pintar, y las llantas eran de acero con
-                                    tapacubos.
-                                </p>
-                                <p>
-                                    En el interior encontrábamos las comodidades
-                                    básicas, teniendo como únicos extras
-                                    la posibilidad de incorporar elevalunas
-                                    eléctricos delanteros y aire acondicionado.
-                                    La tapicería se ofrecía con varios acabados,
-                                    todos ellos de tela sencilla, pero que
-                                    con el paso de los años terminó demostrando
-                                    ser sorprendentemente resistente al
-                                    desgaste.
-                                </p>
-                            </div>
+                <section id="gamaGL" class="mx-3 my-3">
+                    <div class="bg-body border border-2 border-primary rounded-2 py-3 px-4">
+                        <div class="col-12 p-3 text-center fw-bold">
+                            <h3>Peugeot 405 GL</h3>
+                        </div>
+                        <div class="row row-cols-sm-12 row-cols-md-2 row-cols-lg-2">
+
+                            <p>
+                                La gama GL constituía la gama básica de
+                                precio más económico de todo el catálogo.
+                                Tenían un equipamiento mínimo y
+                                se ofrecía con dos motorizaciones, una de
+                                gasolina y una diésel denominada <span class="fw-bold">GLD</span>.
+                            </p>
+                            <p>
+                                Estéticamente no contaban con detalles y
+                                eran muy sencillos. Las molduras de las
+                                puertas eran muy finas y sin cromados,
+                                algunos elementos como los retrovisores o
+                                las manetas de las puertas eran de plástico
+                                sin pintar, y las llantas eran de acero <span class="fw-bold">con
+                                    tapacubos</span>.
+                            </p>
+                            <p>
+                                En el interior encontrábamos las comodidades
+                                básicas, teniendo como únicos extras
+                                la posibilidad de incorporar elevalunas
+                                eléctricos delanteros y aire acondicionado.
+                                La tapicería se ofrecía con varios acabados,
+                                todos ellos de tela sencilla, pero que
+                                con el paso de los años terminó demostrando
+                                ser sorprendentemente <span class="fw-bold">resistente al
+                                    desgaste</span>.
+                            </p>
                         </div>
                     </div>
+                </section>
 
-                    <div id="gamaGR" class="container">
-                        <div class="row">
-                            <div class="row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                <div id="gamaGR" class="mx-3 my-3">
+                    <div class="bg-body border border-2 border-primary rounded-2 py-3 px-4">
+                        <div class="row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                            <div class="col-12 p-3 text-center fw-bold">
                                 <h3>Peugeot 405 GR</h3>
+                            </div>
+                            <div class="row row-cols-sm-12 row-cols-md-2 row-cols-lg-2">
                                 <p>
                                     La gama GR representaba la gama media.
                                     Partiendo de las misma base que el modelo
@@ -448,17 +423,21 @@
                                     aspectos, en el exterior encontrábamos
                                     paragolpes, taloneras laterales y llantas de
                                     aleación de mayor tamaño que en los modelos
-                                    anteriores. La parte interior contaba con una tapicería exclusiva, asientos deportivos y volante tapizado en cuero.
+                                    anteriores. La parte interior contaba con una tapicería exclusiva, asientos
+                                    deportivos y
+                                    volante tapizado en cuero.
                                 </p>
                             </div>
-                            <div  class="row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                                <div  class="row-cols-sm-1 row-cols-md-1">
-                                    <img src="./Recursos/Fotos Peugeot 405/Fotos oficiales/34qn2ux[1].jpg" width="100%" alt="interior01">
+                            <div class="row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                                <div class="row-cols-sm-1 row-cols-md-1">
+                                    <img src="./Recursos/Fotos Peugeot 405/Fotos oficiales/34qn2ux[1].jpg" width="100%"
+                                        alt="interior01">
                                 </div>
-                                <div  class="row-cols-sm-1 row-cols-md-1">
-                                    <img src="./Recursos/Fotos Peugeot 405/Fotos oficiales/43nkae0[1].jpg" width="100% alt="interior02">
+                                <div class="row-cols-sm-1 row-cols-md-1">
+                                    <img src="./Recursos/Fotos Peugeot 405/Fotos oficiales/43nkae0[1].jpg"
+                                        width="100% alt=" interior02">
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -649,53 +628,36 @@
                     <!-- Start OffCanvas-->
 
                     <div>
-                        <button class="btn btn-success" type="button"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#staticBackdrop"
-                            aria-controls="staticBackdrop">
+                        <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                             Inicia Sesión
                         </button>
 
-                        <div class="offcanvas offcanvas-start"
-                            data-bs-backdrop="static" tabindex="-1"
-                            id="staticBackdrop"
-                            aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1"
+                            id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title"
-                                    id="staticBackdropLabel">Inicia
+                                <h5 class="offcanvas-title" id="staticBackdropLabel">Inicia
                                     Sesión</h5>
-                                <button type="button" class="btn-close"
-                                    data-bs-dismiss="offcanvas"
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
                                 <form>
                                     <div class="mb-3">
-                                        <label for="email"
-                                            class="form-label">Email</label>
-                                        <input type="email" class="form-control"
-                                            id="email" />
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" />
                                     </div>
                                     <div class="mb-3">
-                                        <label for="password"
-                                            class="form-label">Contraseña</label>
-                                        <input type="password"
-                                            class="form-control"
-                                            id="password" />
+                                        <label for="password" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="password" />
                                     </div>
                                     <div class="mb-3 form-check">
-                                        <input type="checkbox"
-                                            class="form-check-input"
-                                            id="exampleCheck1" />
-                                        <label class="form-check-label"
-                                            for="exampleCheck1">Recordar</label>
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                                        <label class="form-check-label" for="exampleCheck1">Recordar</label>
                                     </div>
-                                    <button type="submit"
-                                        class="btn btn-primary">Entrar</button>
-                                    <a class="btn" role="button"
-                                        aria-disabled="true"
-                                        href="#registro"><button type="button"
-                                            class="btn btn-outline-warning">
+                                    <button type="submit" class="btn btn-primary">Entrar</button>
+                                    <a class="btn" role="button" aria-disabled="true" href="#registro"><button
+                                            type="button" class="btn btn-outline-warning">
                                             No estoy registrado
                                         </button></a>
                                 </form>
@@ -708,63 +670,48 @@
                     <!-- Offcanvas -->
 
                     <div>
-                        <button class="btn btn-danger" type="button"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasLogin"
-                            aria-controls="offcanvasLogin">
+                        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasLogin" aria-controls="offcanvasLogin">
                             Inicia Sesión
                         </button>
 
                         <!-- Offcanvas -->
-                        <div class="offcanvas offcanvas-start" tabindex="-1"
-                            id="offcanvasLogin"
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLogin"
                             aria-labelledby="offcanvasLoginLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title"
-                                    id="offcanvasLoginLabel">Inicio
+                                <h5 class="offcanvas-title" id="offcanvasLoginLabel">Inicio
                                     de Sesión</h5>
-                                <button type="button"
-                                    class="btn-close text-reset"
-                                    data-bs-dismiss="offcanvas"
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
                                 <form>
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1"
-                                            class="form-label">Correo
+                                        <label for="exampleInputEmail1" class="form-label">Correo
                                             electrónico</label>
-                                        <input type="email" class="form-control"
-                                            id="exampleInputEmail1"
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="emailHelp">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="exampleInputPassword1"
-                                            class="form-label">Contraseña</label>
-                                        <input type="password"
-                                            class="form-control"
-                                            id="exampleInputPassword1">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
                                     </div>
-                                    <button type="submit"
-                                        class="btn btn-primary">Iniciar
+                                    <button type="submit" class="btn btn-primary">Iniciar
                                         Sesión</button>
                                 </form>
                             </div>
                         </div>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1"
-                            aria-labelledby="exampleModalLabel"
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title"
-                                            id="exampleModalLabel">¿Desea cerrar
+                                        <h5 class="modal-title" id="exampleModalLabel">¿Desea cerrar
                                             la
                                             sesión?</h5>
-                                        <button type="button" class="btn-close"
-                                            data-bs-dismiss="modal"
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
@@ -773,12 +720,9 @@
                                         también.
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button"
-                                            class="btn btn-secondary"
-                                            data-bs-dismiss="modal"
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
                                             data-bs-dismiss="offcanvas">Cerrar</button>
-                                        <button type="button"
-                                            class="btn btn-primary"
+                                        <button type="button" class="btn btn-primary"
                                             data-bs-dismiss="modal">Continuar</button>
                                     </div>
                                 </div>
@@ -788,52 +732,40 @@
 
                     <!-- Start Registro -->
 
-                    <div id="registro">
+                    <div id="registro" class="bg-body-secondary">
                         <form>
                             <fieldset>
                                 <legend>Datos</legend>
                                 <div class="row mb-3">
                                     <div class="col-md-6">
-                                        <label for="nombre"
-                                            class="form-label">Nombre</label>
-                                        <input type="text" class="form-control"
-                                            id="nombre" placeholder="Nombre"
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="Nombre"
                                             required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="apellidos"
-                                            class="form-label">Apellidos</label>
-                                        <input type="text" class="form-control"
-                                            id="apellidos"
-                                            placeholder="Apellidos" required>
+                                        <label for="apellidos" class="form-label">Apellidos</label>
+                                        <input type="text" class="form-control" id="apellidos" placeholder="Apellidos"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-md-6">
-                                        <label for="fechaNacimiento"
-                                            class="form-label">Fecha de
+                                    <div class="col-sm-1 col-md-6 col-lg-6">
+                                        <label for="fechaNacimiento" class="form-label">Fecha de
                                             Nacimiento</label>
-                                        <input type="date" class="form-control"
-                                            id="fechaNacimiento"
-                                            min="1900-01-01" required>
+                                        <input type="date" class="form-control" id="fechaNacimiento" min="1900-01-01"
+                                            required>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Género</label>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="radio" name="genero"
-                                                id="generoHombre"
+                                            <input class="form-check-input" type="radio" name="genero" id="generoHombre"
                                                 value="hombre">
-                                            <label class="form-check-label"
-                                                for="generoHombre">Hombre</label>
+                                            <label class="form-check-label" for="generoHombre">Hombre</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="radio" name="genero"
-                                                id="generoMujer"
+                                            <input class="form-check-input" type="radio" name="genero" id="generoMujer"
                                                 value="mujer">
-                                            <label class="form-check-label"
-                                                for="generoMujer">Mujer</label>
+                                            <label class="form-check-label" for="generoMujer">Mujer</label>
                                         </div>
                                     </div>
                                 </div>
@@ -843,75 +775,56 @@
                                 <legend>Dirección</legend>
                                 <div class="row mb-3">
                                     <div class="col-md-3">
-                                        <label for="selectTipoDireccion"
-                                            class="form-label">Tipo de
+                                        <label for="selectTipoDireccion" class="form-label">Tipo de
                                             Dirección</label>
-                                        <select class="form-select"
-                                            id="selectTipoDireccion" required>
+                                        <select class="form-select" id="selectTipoDireccion" required>
                                             <option value>Seleccione</option>
                                             <option value="calle">Calle</option>
-                                            <option
-                                                value="avenida">Avenida</option>
+                                            <option value="avenida">Avenida</option>
                                             <option value="plaza">Plaza</option>
                                         </select>
                                     </div>
                                     <div class="col-md-9">
-                                        <label for="direccion"
-                                            class="form-label">Dirección</label>
-                                        <input type="text" class="form-control"
-                                            id="direccion"
-                                            placeholder="Dirección" required>
+                                        <label for="direccion" class="form-label">Dirección</label>
+                                        <input type="text" class="form-control" id="direccion" placeholder="Dirección"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-2">
-                                        <label for="numero"
-                                            class="form-label">Número</label>
-                                        <input type="text" class="form-control"
-                                            id="numero" placeholder="Número"
+                                        <label for="numero" class="form-label">Número</label>
+                                        <input type="text" class="form-control" id="numero" placeholder="Número"
                                             required>
                                     </div>
                                     <div class="col-md-2">
-                                        <label for="bloque"
-                                            class="form-label">Bloque</label>
-                                        <input type="text" class="form-control"
-                                            id="bloque" placeholder="Bloque">
+                                        <label for="bloque" class="form-label">Bloque</label>
+                                        <input type="text" class="form-control" id="bloque" placeholder="Bloque">
                                     </div>
                                     <div class="col-md-2">
-                                        <label for="piso"
-                                            class="form-label">Piso</label>
-                                        <input type="text" class="form-control"
-                                            id="piso" placeholder="Piso">
+                                        <label for="piso" class="form-label">Piso</label>
+                                        <input type="text" class="form-control" id="piso" placeholder="Piso">
                                     </div>
                                     <div class="col-md-2">
-                                        <label for="letra"
-                                            class="form-label">Letra</label>
-                                        <input type="text" class="form-control"
-                                            id="letra" placeholder="Letra">
+                                        <label for="letra" class="form-label">Letra</label>
+                                        <input type="text" class="form-control" id="letra" placeholder="Letra">
                                     </div>
                                     <div class="col-md-4">
-                                        <label for="codigoPostal"
-                                            class="form-label">Código
+                                        <label for="codigoPostal" class="form-label">Código
                                             Postal</label>
-                                        <input type="text" class="form-control"
-                                            id="codigoPostal" placeholder="CP"
+                                        <input type="text" class="form-control" id="codigoPostal" placeholder="CP"
                                             required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-7">
-                                        <label for="localidad"
-                                            class="form-label">Localidad</label>
-                                        <input type="text" class="form-control"
-                                            id="localidad"
-                                            placeholder="Localidad" required>
+                                        <label for="localidad" class="form-label">Localidad</label>
+                                        <input type="text" class="form-control" id="localidad" placeholder="Localidad"
+                                            required>
                                     </div>
                                     <div class="col-md-5">
-                                        <label for="provincia"
-                                            class="form-label">Provincia</label>
-                                        <input type="text" class="form-control"
-                                            id="provincia"
-                                            placeholder="Provincia" required>
+                                        <label for="provincia" class="form-label">Provincia</label>
+                                        <input type="text" class="form-control" id="provincia" placeholder="Provincia"
+                                            required>
                                     </div>
                                 </div>
                             </fieldset>
@@ -921,112 +834,84 @@
                                 <div class="row mb-3">
                                     <div class="col-lg-2 col-md-3">
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion1"
+                                            <input class="form-check-input" type="checkbox" name="aficion1"
                                                 id="aficiones1">
-                                            <label class="form-check-label"
-                                                for="aficiones1">GL</label>
+                                            <label class="form-check-label" for="aficiones1">GL</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion2"
+                                            <input class="form-check-input" type="checkbox" name="aficion2"
                                                 id="aficiones2">
-                                            <label class="form-check-label"
-                                                for="aficiones2">GLD</label>
+                                            <label class="form-check-label" for="aficiones2">GLD</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-md-3">
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion3"
+                                            <input class="form-check-input" type="checkbox" name="aficion3"
                                                 id="aficiones3">
-                                            <label class="form-check-label"
-                                                for="aficiones3">GR</label>
+                                            <label class="form-check-label" for="aficiones3">GR</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion4"
+                                            <input class="form-check-input" type="checkbox" name="aficion4"
                                                 id="aficiones4">
-                                            <label class="form-check-label"
-                                                for="aficiones4">GRI</label>
+                                            <label class="form-check-label" for="aficiones4">GRI</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion5"
+                                            <input class="form-check-input" type="checkbox" name="aficion5"
                                                 id="aficiones5">
-                                            <label class="form-check-label"
-                                                for="aficiones5">GRx4</label>
+                                            <label class="form-check-label" for="aficiones5">GRx4</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-md-3">
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion6"
+                                            <input class="form-check-input" type="checkbox" name="aficion6"
                                                 id="aficiones6">
-                                            <label class="form-check-label"
-                                                for="aficiones6">SR</label>
+                                            <label class="form-check-label" for="aficiones6">SR</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion7"
+                                            <input class="form-check-input" type="checkbox" name="aficion7"
                                                 id="aficiones7">
-                                            <label class="form-check-label"
-                                                for="aficiones7">SRI</label>
+                                            <label class="form-check-label" for="aficiones7">SRI</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion8"
+                                            <input class="form-check-input" type="checkbox" name="aficion8"
                                                 id="aficiones8">
-                                            <label class="form-check-label"
-                                                for="aficiones8">SRx4</label>
+                                            <label class="form-check-label" for="aficiones8">SRx4</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-md-3">
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion9"
+                                            <input class="form-check-input" type="checkbox" name="aficion9"
                                                 id="aficiones9">
-                                            <label class="form-check-label"
-                                                for="aficiones9">ST</label>
+                                            <label class="form-check-label" for="aficiones9">ST</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion10"
+                                            <input class="form-check-input" type="checkbox" name="aficion10"
                                                 id="aficiones10">
-                                            <label class="form-check-label"
-                                                for="aficiones10">STI</label>
+                                            <label class="form-check-label" for="aficiones10">STI</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion11"
+                                            <input class="form-check-input" type="checkbox" name="aficion11"
                                                 id="aficiones11">
-                                            <label class="form-check-label"
-                                                for="aficiones11">STDT</label>
+                                            <label class="form-check-label" for="aficiones11">STDT</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-md-3">
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion12"
+                                            <input class="form-check-input" type="checkbox" name="aficion12"
                                                 id="aficiones12">
-                                            <label class="form-check-label"
-                                                for="aficiones12">405
+                                            <label class="form-check-label" for="aficiones12">405
                                                 Mi16</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion13"
+                                            <input class="form-check-input" type="checkbox" name="aficion13"
                                                 id="aficiones13">
-                                            <label class="form-check-label"
-                                                for="aficiones13">405
+                                            <label class="form-check-label" for="aficiones13">405
                                                 Mi16x4</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input"
-                                                type="checkbox" name="aficion14"
+                                            <input class="form-check-input" type="checkbox" name="aficion14"
                                                 id="aficiones14">
-                                            <label class="form-check-label"
-                                                for="aficiones14">405
+                                            <label class="form-check-label" for="aficiones14">405
                                                 T16</label>
                                         </div>
                                     </div>
@@ -1034,8 +919,7 @@
                             </fieldset>
 
                             <fieldset>
-                                <button type="submit"
-                                    class="btn btn-primary">Registrarse</button>
+                                <button type="submit" class="btn btn-primary">Registrarse</button>
                             </fieldset>
 
                         </form>
@@ -1279,22 +1163,22 @@
                     <!-- End Info-->
                 </div>
             </div>
-        </main>
-        <aside>
+    </main>
+    <aside>
 
-        </aside>
+    </aside>
 
-        <!-- Botón ir hacia arriba-->
+    <!-- Botón ir hacia arriba-->
 
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a href="#cabecera"><button class="btn btn-primary" type="button"><i
-                        class="bi bi-chevron-double-up"></i></button></a>
-        </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="#cabecera"><button class="btn btn-primary" type="button"><i
+                    class="bi bi-chevron-double-up"></i></button></a>
+    </div>
 
-        <!-- Start Footer -->
+    <!-- Start Footer -->
+    <a href="https://startbootstrap.com/previews/creative"> Enlace ref</a>
+    <!-- End Footer -->
 
-        <!-- End Footer -->
-
-    </body>
+</body>
 
 </html>
