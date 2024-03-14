@@ -9,5 +9,21 @@ if(valores[4].length>valores[3].length){
 }else
     alert("Son de igual longitud.");
 
+//---- Rafa lo hace así, no es comparar longitud sino código ascii mayor -----
+let mayor = (valores[3]>valores[4])?valores[3]:valores[4];
+
+alert("El mayor es "+mayor);
+
 //b
 
+
+
+
+//c
+alert(valores[0]||valores[2]);
+alert(valores[0]&&valores[2]);
+alert(valores[1]+valores[5]);
+alert(valores[1]-valores[5]);
+alert(valores[1]*valores[5]);
+alert(valores[1]/valores[5]);
+alert(valores[1]%valores[5]);

@@ -13,3 +13,7 @@ let meses = [
     " Diciembre"
 ];
 alert(meses);
+
+for (const i of meses) {
+    alert(meses[])
+}
