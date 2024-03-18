@@ -7,9 +7,6 @@ public class Tarta {
 	private String sabor;
 	private double volumenLitros;
 	private boolean extra;
-	
-	
-
 
 	public Tarta(int num, String sabor, double volumenLitros, boolean extra) {
 		super();
@@ -18,7 +15,6 @@ public class Tarta {
 		this.volumenLitros = volumenLitros;
 		this.extra = extra;
 	}
-
 
 	public String getSabor() {
 		return sabor;

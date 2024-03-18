@@ -46,6 +46,8 @@ public class Pasteleria {
 	}
 	
 	
-	
+	public void rellenarArrayTartas (Tarta tarta) {
+		cantTartasSemana
+	}
 	
 }
