@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjerciciosExam01</title>
+    <script defer>
+
+        //Ejercico03 
+            // Escribe la funcón sortear(arr) que recibe como parámetro un array de tamaño indeterminado y 
+            // devuelve uno de los elementos del array escogido al azar.
+        function sortear(arr){ //buen lio que no entiendo...se supone que el que funciona es el sortear2
+            let desde = 0;
+            let hasta = arr.length;
+            let numAleatorio = Math.floor(desde + Math.random() * hasta);
+            return numAleatorio;
+        }
+        function sortear2(arr){
+            let numAleatorio = Math.floor(Math.random()*arr.length);
+            return arr[numAleatorio];
+        }
+
+        //Ejercicio 2
+        function camelize(){
+            //Pasar de "border-left-radius" a "borderLeftRadius"
+
+            //quitamos guiones
+            let palabrasSueltas = str.split('-');
+
+            //cambiar primera letra a matusculas (a partir de la 2da palabra)
+            for (let i = 1 ; i < palabrasSueltas.length; i++)   {
+                
+                let primeraEnMayuscula = palabrasSueltas[i].charAt(0).toUpperCase();
+                palabrasSueltas[i] = primeraEnMayuscula+palabrasSueltas[i].substring(1);
+            
+            }
+            //unir las palabras
+            return palabrasSueltas.join('');
+        }
+
+        //Ejercicio 1
+        function pedirNombres{
+            let resultado = new Array();
+
+            let texto = prompt("Introduzca un nombre");
+            while(isNaN(texto)){
+                resultado.push(texto);
+                texto = prompt("Introduzca un nombre");
+            }
+
+            return resultado;
+        }
+
+        //Ejercicio 4
+            //Escribe una función principal() que llame al método realizado en el ejercicio01, utilice la función 
+            //del ejercicio02 para convertir todos los textos a la notación camelCase y termine eligiendo un elemento 
+            //al azar utilizando la función del ejercicio03. Este método debe ser llamado una vez finalizado la carga de la página web.
+        function principal() {
+            let propiedadesCSS = pedirNombres();
+            for (let i = 0; i < propiedadesCSS; i++) {
+                propiedadesCSS[i] = camelize(propiedadesCSS[i]);
+            }
+            alert ("El escogido es: "+sortear2(propiedadesCSS));
+        }
+
+        principal();
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>
