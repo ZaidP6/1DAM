@@ -1,6 +1,8 @@
 
+/*
+Dejo comentado código erróneo 
 let x = prompt("Indique el número para factorizarlo")
-alert(factorial(x))
+
 //como solo se va a ejecutar aqui una vez no hace falta 
 // darle nombre a la función
 function factorial(x) { 
@@ -14,3 +16,14 @@ function factorial(x) {
         }             
     return y;    
 }
+
+alert(factorial(x));
+*/
+
+let numero = prompt("Introduzca un número"); // Número del que queremos calcular el factorial
+let resultado = 1;
+for (let i = numero; i > 0; i--) {
+    resultado *= i;
+}
+
+alert("El resultado del número factorial " + numero + " es " + resultado);
