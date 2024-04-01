@@ -27,7 +27,7 @@
             "style": "full"
           },
           "style": "powerline",
-          "template": "\uF07B {{ .Path }} ",
+          "template": " \ue5ff {{ .Path }} ",
           "type": "path"
         },
         {
