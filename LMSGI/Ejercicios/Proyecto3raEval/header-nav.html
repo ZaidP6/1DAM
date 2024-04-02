@@ -18,65 +18,42 @@
     <!-- CDN Bootstrap -->
 
 </head>
+<!--Para dejar Navbar fija arriba fixed-top navbar-shrink-->
 
-<nav class="navbar navbar-expand-lg fixed-top py-3 navbar-shrink bg-dark" data-bs-theme="dark">
-    <div class="container-fluid px-4 px-lg-5">
-        <a class="navbar-brand" href="#inicio"><img src="./Recursos/img/Mythosaur Shop.png" width="70%" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid justify-content-end">
+        <a class="navbar-brand" href="#inicio"><img src="./Recursos/img/Mythosaur Shop Lineal Black.png" width="90%"
+                alt="Logo lineal"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto my-2 mb-2 my-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#historia">Historia</a>
+                    <a class="nav-link" href="#">Llaveros</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Modelos
-                    </a>
-                    <ul class="dropdown-menu" style="background-color: #3a3d3f">
-                        <li><a class="dropdown-item" href="#modelos">Todos los modelos</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="#gamaGL">Gama
-                                GL</a></li>
-                        <li><a class="dropdown-item" href="#gamaGR">Gama
-                                GR</a></li>
-                        <li><a class="dropdown-item" href="#gamaSR">Gama
-                                SR</a></li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li><a class="dropdown-item" href="#Mi16">Gama
-                                Mi16</a></li>
-                        <li><a class="dropdown-item" href="#modeloCompeticion">Competición</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">Felpudos</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#datosTecnicos">Datos Técnicos</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gorras</a>
+                </li>
                 <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" href="#modalinicio"><i
-                            class="bi bi-person-fill"></i>
-                        Inicio
-                        Sesión</a>
+                            class="bi bi-person-fill"></i></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" href="#modalregistro"><i
-                            class="bi bi-person-fill"></i>
-                        Registro</a>
+                <li class="nav-item"><a class="nav-link" href="#bolsacompra"><i class="bi bi-bag-fill"></i></a>
                 </li>
-
-
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-
         </div>
-
     </div>
 </nav>
+
 </html>
