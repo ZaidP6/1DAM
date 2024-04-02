@@ -1,0 +1,39 @@
+body{
+    background-image: url(../img/mythosaurgrisBG.png);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    }
+
+    .producto {
+        margin-bottom: 20px;
+        border: solid black 2px;
+        border-radius: 20px;
+        padding: 5%;
+    }
+
+    .producto img {
+        max-width: 100%;
+        height: auto;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .producto:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-comprar {
+        transition: transform 0.3s;
+    }
+    .btn-comprar:hover {
+        transform: scale(1.1);
+    }
+
+    .producto>.precio{
+        text-align: center;
+    }
