@@ -12,15 +12,15 @@ body{
         border: solid black 2px;
         border-radius: 20px;
         padding: 5%;
+        background-color: #ffffff50;
     }
 
     .producto img {
         max-width: 100%;
         height: auto;
-        background-color: #fff;
         border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
+        padding: 10px;
+        margin-bottom: 5px;
     }
     .producto:hover {
         transform: scale(1.05);
@@ -29,11 +29,29 @@ body{
 
     .btn-comprar {
         transition: transform 0.3s;
+        background-color: rgb(13, 112, 241);
+        width: 100%;
     }
     .btn-comprar:hover {
-        transform: scale(1.1);
+        /*transform: scale(1.1);*/
+        background-color: greenyellow;
+        color: black;
     }
 
-    .producto>.precio{
-        text-align: center;
+    .precioEntero{
+        font-size: 3em;
+    }
+    .precioDecimal{
+        font-size: 1.5em;
+        padding-top: 5%;
+        vertical-align: top;
+    }
+    .precioMoneda{
+        font-size: 1.5em;
+        padding-top: 5%;
+        vertical-align: top;
+    }
+
+    footer{
+        background-color: #b4b4b434;
     }
