@@ -1,11 +1,17 @@
-body{
-    background-image: url(../img/mythosaurgrisBG.png);
-    background-size: auto;
-    background-repeat: repeat;
+.fondoEstatico{
+    background-image: url(../img/mythosaurNegro.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
     background-position: center;
-    background-color: #f8f9fa;
+    background-color: rgb(58, 65, 71);
     font-family: Arial, sans-serif;
     }
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
 
     .producto {
         margin-bottom: 20px;
@@ -52,6 +58,6 @@ body{
         vertical-align: top;
     }
 
-    footer{
-        background-color: #b4b4b434;
+    header, main, footer{
+        padding: 20px;
     }
