@@ -18,7 +18,7 @@
 </head>
 <!--Para dejar Navbar fija arriba fixed-top navbar-shrink-->
 
-<nav class="navbar navbar-collapse bg-body-tertiary">
+<nav class="navbar navbar-collapse navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid justify-content-between">
         <a class="navbar-brand" href="#inicio"><img src="./Recursos/img/Mythosaur Shop Lineal Black.png" width="90%"
                 alt="Logo lineal"></a>
@@ -31,24 +31,38 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">Inicio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Llaveros</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Llaveros</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" aria-disabled="true">Felpudos</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Carteras</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Tazas</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Fundas Móvil</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Funkos</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#">Todos los productos</a></li>
+                        
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Felpudos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Carteras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tazas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Fundas Móvil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Funkos</a>
-                </li>
+               
                 <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" href="#modalinicio"><i
                             class="bi bi-heart-fill"></i></a>
                 </li>
