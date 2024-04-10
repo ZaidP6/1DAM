@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+
+        let numerinchis = [5,9,63,12,45,78,1,0,59,22,13,8];
+
+        function compararNumeros(a , b) {
+            if (a>b) {
+                return 1;
+            }if (b>a) {
+                return -1;
+            } else {
+                return 0;
+            }
+        }
+
+        function ordenarNumeros(numerinchis) {
+            return numerinchis.sort(compararNumeros);
+        }
+
+        alert(ordenarNumeros(numerinchis));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

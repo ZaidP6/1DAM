@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+
+        let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D',
+            'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+        let dniUsuario = prompt('Indique su DNI sin letra');
+        let letraDNIUser = prompt('Indique la letra');
+
+        function comprobarDNI(){
+            if(dniUsuario <= 99999999 && dniUsuario >= 0){
+                let resto = dniUsuario % 23;
+                let letraDNI = letras[resto];
+                if(letraDNIUser.toUpperCase() === letraDNI){
+                    alert("Todo correcto crack")
+                }else
+                    alert("Mala suerte, ta equivocao.")
+            }else
+                alert('Número proporcionado no es válido.');
+        }
+
+        comprobarDNI();
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

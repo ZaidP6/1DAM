@@ -16,12 +16,12 @@ alert("El mayor es "+mayor);
 
 //b
 
-
+alert(valores[0]||valores[2]);
+alert(valores[0]&&valores[2]);
 
 
 //c
-alert(valores[0]||valores[2]);
-alert(valores[0]&&valores[2]);
+
 alert(valores[1]+valores[5]);
 alert(valores[1]-valores[5]);
 alert(valores[1]*valores[5]);

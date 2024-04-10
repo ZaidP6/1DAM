@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+
+
+        function comprobarPalindromo() {
+            let frase = prompt('Intenta escribir un palíndromo.')
+
+            //primero a minusculas
+
+            frase = frase.toLowerCase();
+
+            //segundo quitar espacios y/o guiones
+
+            frase = frase.replace(/\s/g, "");
+
+            //tercera parte separamos letras
+
+            let fraseSep = frase.split('');
+
+            fraseSep = fraseSep.reverse();
+            fraseSep = fraseSep.join('');
+
+            if(frase === fraseSep){
+                alert("Enhorabuena! Es un palíndromo.")
+            }else {
+               alert("Como dice Luismi, busca en internet qué es un palíndromo anda") 
+            } 
+        }
+
+        comprobarPalindromo();
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
