@@ -15,11 +15,11 @@
 	</h1>
 	
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#showProductModal">Ver producto</button>
-	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal fade" id="showProductModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
 	    <div class="modal-dialog">
 	      <div class="modal-content">
 	        <div class="modal-header">
-				<h1 class="modal-title fs-5" id="staticBackdropLabel">Mostrar producto</h1>
+				<h1 class="modal-title fs-5" id="showProductModal">Mostrar producto</h1>
 				         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				       </div>
 		        <div class="modal-body">
@@ -41,38 +41,32 @@
 	</div>
 	
 	
-	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModel">
 	    Nuevo Producto
 	  </button>
 	  
 	  <!-- Modal -->
-	  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  <div class="modal fade" id="productModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 	    <div class="modal-dialog">
 	      <div class="modal-content">
 	        <div class="modal-header">
 	          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
 	          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	        </div>
-	        <div class="modal-body">
-	            <form>
-	                <div class="form-group">
-	                    <label for="nameProduct">Nombre del producto</label>
-	                    <input type="text" class="form-control" id="nameProduct">
-	                </div>
-	                <div class="form-group">
-	                    <label for="descriptionProduct">Descripción del producto</label>
-	                    <input type="text" class="form-control" id="descriptionProduct">
-	                </div>
-	                <div class="form-group">
-	                    <label for="priceProduct">Precio</label>
-	                    <input type="text" class="form-control" id="priceProduct">
-	                </div>
-	                <div class="form-group">
-	                    <label for="stockProduct">Cantidad</label>
-	                    <input type="text" class="form-control" id="stockProduct">
-	                </div>
-	            </form>
-	        </div>
+			<div class="modal-body">
+					            
+			                    <p>Nombre del producto: <span th:text="${productName}"></span>Producto01.</p>
+			
+								<p>Hoy es: <span th:text="${today}">27 abril 2024</span>.</p>
+			
+								<p>El producto: <span th:text="${product}">Un producto super chulo</span>.</p>
+			
+								<p>Lista de productos: <span th:text="${lista}"></span>.</p>
+			
+								<p><span th:text="${map}"></span></p>
+			             
+								<p>Cantidad actual: <span th:text="${quantity}">500</span> unidades.</p>
+					        </div>
 	        <div class="modal-footer">
 	          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 	          <button type="button" class="btn btn-primary">Understood</button>
