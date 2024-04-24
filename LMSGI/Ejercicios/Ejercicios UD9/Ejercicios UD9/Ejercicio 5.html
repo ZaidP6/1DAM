@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 15</title>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+        body {font-family: arial, helvetica;}
+        #info {width:160px; border:thin solid silver; padding:.5em; position:fixed;}
+        #info h1 {margin: 0;}
+    </style>
+    <script>
+        let colorFondo = 'white'; // Color de fondo por defecto
+
+        function muestraInformacion(mensaje, nuevoColor) {
+            let info = document.getElementById("info");
+            if (nuevoColor !== colorFondo) {
+                colorFondo = nuevoColor;
+                info.style.backgroundColor = colorFondo;
+            }
+            info.innerHTML = '<h1>'+mensaje[0]+'</h1>';
+            for(let elemento of mensaje) {
+                info.innerHTML += '<p>'+elemento+'</p>';
+            }
+        }
+
+        window.onload = function() {
+            document.addEventListener("mousemove", function(event) {
+                let mensaje = [
+                    "Ratón:",
+                    "Página: (" + event.pageX + ", " + event.pageY + ")",
+                    "Navegador: (" + event.clientX + ", " + event.clientY + ")"
+                ];
+                muestraInformacion(mensaje, 'white');
+            });
+
+            document.addEventListener("keydown", function(event) {
+                let mensaje = [
+                    "Tecla pulsada:",
+                    "Código de la tecla: " + event.keyCode,
+                    "Carácter: " + String.fromCharCode(event.keyCode)
+                ];
+                muestraInformacion(mensaje, '#CCE6FF'); // Fondo azul
+            });
+
+            document.addEventListener("mousedown", function(event) {
+                let mensaje = [
+                    "Botón del ratón pulsado:",
+                    "Botón: " + event.button
+                ];
+                muestraInformacion(mensaje, '#FFFFCC'); // Fondo amarillo
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="info"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

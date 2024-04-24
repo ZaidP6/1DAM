@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Ejercicio 5</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		body {
+			font-family: arial, helvetica;
+		}
+
+		#info {
+			width: 160px;
+			border: thin solid silver;
+			padding: .5em;
+			position: fixed;
+		}
+
+		#info h1 {
+			margin: 0;
+		}
+	</style>
+	<script>
+
+		window.onload = function () {
+
+			let raton = document.querySelector("body");
+
+			raton.addEventListener("pointermove", muestraInformacion);
+
+			function muestraInformacion(mensaje) {
+				let info = document.getElementById("info");
+				info.innerHTML = '<h1>' + mensaje[0] + '</h1>';
+				info.innerHTML += '<p>Posición en la página: (' + evento.pageX + ', ' + evento.pageY + ')</p>';
+                info.innerHTML += '<p>Posición en el navegador: (' + evento.clientX + ', ' + evento.clientY + ')</p>';
+            }
+		}
+	</script>
+</head>
+
+<body>
+	<div id="info"></div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/script.js" defer></script>
+    <style type="text/css">
+
+        main {
+
+            background-color: #3faba2;
+        }
+    </style>
+</head>
+<body class="bg-info text-light">
+    
+    <header class="d-flex mb-5 pb-5">
+
+        <div class="bg-primary w-100"></div>
+        <div class="bg-secondary w-100 py-4 text-center display-5">Cabecera</div>
+        <div class="bg-primary w-100"></div>
+
+    </header>
+
+    <main class="m-5 p-5 border border-dark border-5">
+
+        <form action="" name="formulario">
+            <div class="mb-3 mt-3 input-group">
+              <label for="nombre" class="input-group-text">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Su nombre" name="nombre">
+            </div>
+            <div class="mb-3 input-group">
+              <label for="apellidos" class="input-group-text">Apellidos:</label>
+              <input type="text" class="form-control" id="apellidos" placeholder="Sus apellidos" name="apellidos">
+            </div>
+            <div class="mb-3 input-group">
+                <label for="dni" class="input-group-text">DNI:</label>
+                <input type="text" class="form-control" id="dni" placeholder="Su DNI (8 cifras y 1 letra, juntos)" name="dni">
+            </div>
+            <div class="mb-3 input-group">
+                <label for="email" class="input-group-text">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="email@gmail.com" name="email">
+            </div>
+            <div class="mb-3 input-group">
+                <label for="contrasenia" class="input-group-text">Contraseña:</label>
+                <input type="password" class="form-control" id="contrasenia" placeholder="Su contraseña" name="contrasenia">
+                <i class="bi bi-eye-fill input-group-text"></i>
+            </div>
+            <div class="mb-3 input-group">
+                <label for="repetirContrasenia" class="input-group-text">Repetir contraseña:</label>
+                <input type="password" class="form-control input-group" id="repetirContrasenia" placeholder="Su contraseña" name="repetirContrasenia">
+                <i class="bi bi-eye-fill input-group-text"></i>
+            </div>
+            <div class="mb-3 input-group">
+                <label for="fechaNacimiento" class="input-group-text">Fecha de nacimiento:</label>
+                <input type="date" class="form-control input-group" id="fechaNacimiento" name="fechaNacimiento">
+            </div>
+            <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+          </form>
+
+    </main>
+
+    <footer class="d-flex">
+
+        <div class="bg-primary w-100"></div>
+        <div class="bg-secondary w-100 py-4 text-center display-5">Pie de página</div>
+        <div class="bg-primary w-100"></div>
+
+    </footer>
+</body>
+</html>

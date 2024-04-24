@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <script defer>
+        let formulario = document.forms.formulario;
+
+        let contrasenyas = formulario.querySelectorAll("input[type=password]");
+
+        for (let contrasenya of contrasenyas) {
+
+            contrasenia.nextElementSibling.addEventListener("pointerover", verContrasenya);
+            contrasenia.nextElementSibling.addEventListener("pointerout", ocultarContrasenya);
+        }
+
+        function verContrasenya(evento) {
+
+            this.previousElementSibling.type = "text";
+        }
+
+        function ocultarContrasenya(evento) {
+
+            this.previousElementSibling.type = "password";
+        }
+
+        function verConstrasenya() {
+            let passwordInput = document.getElementById("password");
+            let eyeIcon = document.querySelector(".eye-icon i");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.classList.remove("bi-eye-fill");
+                eyeIcon.classList.add("bi-eye-slash-fill");
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.classList.remove("bi-eye-slash-fill");
+                eyeIcon.classList.add("bi-eye-fill");
+            }
+        }
+
+        function comprobarCorreo() {
+            let emailInput = document.getElementById("email");
+            let email = emailInput.value.trim();
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+                emailInput.classList.add("is-invalid");
+                emailError.textContent = "El formato del correo electrónico no es válido.";
+                return false;
+            }
+            emailInput.classList.remove("is-invalid");
+            emailError.textContent = "";
+            return true;
+        }
+
+        function comprobarDNI() {
+            let divisor = 23;
+            let letras =
+                ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D',
+                    'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L',
+                    'C', 'K', 'E', 'T'];
+
+            //let texto = "Tu DNI completo es: "
+
+            if (numsDni < 0 || numsDni > 99999999) {
+
+                alert("Número no válido");
+            } else {
+                let resto = numsDNI % divisor;
+                let letraCalculada = letras[resto];
+                alert(numsDNI + letraCalculada)
+            }
+            //-----------
+            if (numDni > 0 || numDni < 99999999) {
+
+                let resultado = numDni % 23;
+                let letraCalculada = letras[resultado];
+
+                if (letraCalculada.toUpperCase !== letraDNI.toUpperCase) {
+                    alert("Letra no correcta")
+                } else {
+                    alert("Número y letra del DNI son correctos")
+                }
+
+            } else {
+                alert("Número no válido");
+            }
+        }
+
+        function pasarNombreApellidosAMayusculas() {
+            let nombreInput = document.getElementById("nombre");
+            let apellidosInput = document.getElementById("apellidos");
+
+            let nombre = nombreInput.value.trim().toUpperCase();
+            let apellidos = apellidosInput.value.trim().toUpperCase();
+
+            nombreInput.value = nombre;
+            apellidosInput.value = apellidos;
+        }
+
+        function procesarFormulario() {
+            let dniValido = comprobarDNI();
+            let correoValido = comprobarCorreo();
+            let constrasenyaValida = validarConstrasenya();
+            return dniValido && constrasenyaValida && correoValido;
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="container-fluid bg-primary text-light text-center py-3">
+        <h1>Formulario de Registro</h1>
+    </header>
+
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <form name="formulario" onsubmit="return validarFormulario()">
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required
+                            onblur="pasarNombreApellidosAMayusculas()">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" required
+                            onblur="pasarNombreApellidosAMayusculas()">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="dni" class="form-label">DNI</label>
+                        <input type="text" class="form-control" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" required>
+                        <small class="form-text text-muted">Introduce 8 números seguidos de una letra (sin espacios ni
+                            guiones).</small>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+
+
+                    <div class="mb-3 position-relative">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" required>
+                        <span class="eye-icon position-absolute end-0 top-50 translate-middle-y"
+                            style="cursor: pointer;" onclick="verConstrasenya()">
+                            <i class="bi bi-eye-fill"></i>
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password-confirm" class="form-label">Confirmar Contraseña</label>
+                        <input type="password" class="form-control" id="password-confirm" required>
+                        <span class="eye-icon position-absolute end-0 top-50 translate-middle-y"
+                            style="cursor: pointer;" onclick="verConstrasenya()">
+                            <i class="bi bi-eye-fill"></i>
+                        </span>
+                        <div id="password-error" class="text-danger"></div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="fecha-nacimiento" class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="fecha-nacimiento" required>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid bg-dark text-light text-center py-3 mt-4">
+        <p>© 2024 - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
