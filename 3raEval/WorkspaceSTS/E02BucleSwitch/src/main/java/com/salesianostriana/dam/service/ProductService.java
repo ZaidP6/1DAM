@@ -1,4 +1,4 @@
-package service;
+package com.salesianostriana.dam.service;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import model.Product;
+import com.salesianostriana.dam.model.Product;
 
 @Service
 public class ProductService {

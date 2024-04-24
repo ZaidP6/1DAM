@@ -1,4 +1,4 @@
-package model;
+package com.salesianostriana.dam.model;
 
 import java.time.LocalDateTime;
 
