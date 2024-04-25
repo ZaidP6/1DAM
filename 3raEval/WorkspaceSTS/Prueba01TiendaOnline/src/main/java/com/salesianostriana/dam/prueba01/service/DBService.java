@@ -1,4 +1,4 @@
-package com.salesianostriana.dam.prueba01;
+package com.salesianostriana.dam.prueba01.service;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
+
+import com.salesianostriana.dam.prueba01.model.Product;
 
 
 
