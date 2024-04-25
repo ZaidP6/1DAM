@@ -60,7 +60,9 @@ function comprobarDNI() {
 
 function comprobarCorreo() {
 
-    let patronCorreo =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    let patronCorreo = /^\w+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+
+
 
     let campoCorreo = formulario.elements.email;
 

@@ -5,21 +5,12 @@
     <meta charset="utf-8">
 
     <style type="text/css">
-        body {
-			font-family: arial, helvetica;
-		}
-        #info {
-			width:160px; 
-			border:thin solid silver; 
-			padding:.5em; 
-			position:fixed;
-		}
-        #info h1 {
-			margin: 0;
-		}
+        body {font-family: arial, helvetica;}
+        #info {width:160px; border:thin solid silver; padding:.5em; position:fixed;}
+        #info h1 {margin: 0;}
     </style>
     <script>
-        let colorFondo = 'white';
+        let colorFondo = 'white'; // Color de fondo por defecto
 
         function muestraInformacion(mensaje, nuevoColor) {
             let info = document.getElementById("info");
@@ -49,7 +40,7 @@
                     "Código de la tecla: " + event.keyCode,
                     "Carácter: " + String.fromCharCode(event.keyCode)
                 ];
-                muestraInformacion(mensaje, '#CCE6FF'); 
+                muestraInformacion(mensaje, '#CCE6FF'); // Fondo azul
             });
 
             document.addEventListener("mousedown", function(event) {
@@ -57,7 +48,7 @@
                     "Botón del ratón pulsado:",
                     "Botón: " + event.button
                 ];
-                muestraInformacion(mensaje, '#FFFFCC');
+                muestraInformacion(mensaje, '#FFFFCC'); // Fondo amarillo
             });
         };
     </script>
