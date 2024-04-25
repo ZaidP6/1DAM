@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.salesianostriana.dam.prueba01.service.DBService;
@@ -19,8 +20,7 @@ public class MainController {
 	
 	
 	public String returnProduct(@RequestParam(name="productName", required=false, defaultValue="Mundo") String nombre, Model model) {
-		
-		
+				
 		model.addAttribute("productName", nombre);
 		//Tomamos la fecha y hora actual del sistema con
 		model.addAttribute("today", LocalDate.now());

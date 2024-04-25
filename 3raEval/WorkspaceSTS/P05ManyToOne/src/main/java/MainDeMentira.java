@@ -18,7 +18,8 @@ public class MainDeMentira {
 	@PostConstruct
 	public void ejecutar() {
 		
-		Alumno a1 = new Alumno();
+		/*
+		 * Alumno a1 = new Alumno();
 		a1.setNombre("Pepe");
 		a1.setApellidos("Pérez Pérez");
 		a1.setEmail("pepe@gmail.com");
@@ -27,9 +28,15 @@ public class MainDeMentira {
 		a2.setNombre("María");
 		a2.setApellidos("Ruiz Hidalgo");
 		a2.setEmail("lamari14@msn.com");
+		 */
+		Alumno a = Alumno.builder()
+		.nombre("Luis Miguel")
+		.apellidos("Lçopez")
+		.email("luismi@gmail.com")
+		.build();
 		
-		alumnoRepositorio.save(a1);
-		alumnoRepositorio.save(a2);
+		alumnoRepositorio.save(a);
+		alumnoRepositorio.save(a);
 		
 		Curso c = new Curso();
 		c.setNombre("1º DAM");
@@ -44,11 +51,11 @@ public class MainDeMentira {
 		c.getAlumnos().add(a2);
 		*/
 		
-		a1.addToCurso(c);
-		a2.addToCurso(c);
+		//a1.addToCurso(c);
+		//a2.addToCurso(c);
 
-		alumnoRepositorio.save(a1);
-		alumnoRepositorio.save(a2);
+		//alumnoRepositorio.save(a1);
+		//alumnoRepositorio.save(a2);
 
 		
 		/*List<Curso> cursos = 
@@ -62,8 +69,8 @@ public class MainDeMentira {
 		}*/
 		
 		System.out.println(c);
-		for(Alumno a : c.getAlumnos()) {
-			System.out.println(a);
+		for(Alumno al : c.getAlumnos()) {
+			System.out.println(al);
 		}
 		
 	}
