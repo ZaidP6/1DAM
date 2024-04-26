@@ -87,41 +87,46 @@
                 <div class="d-flex justify-content-center">
                     <h1>Registro</h1>
                 </div>
-                <div">
-                    <div id="registro" class="bg-body-secondary">
+                <div>
+                    <div id="registro" class="bg-body-secondary p-5 m-4 rounded-3">
                         <form>
                             <fieldset>
                                 <legend>Datos</legend>
                                 <div class="row mb-3">
-                                    <div class="col-md-4">
+                                    <div class="col-sm-12 col-md-4">
                                         <label for="nombre" class="form-label">Nombre</label>
                                         <input type="text" class="form-control" id="nombre" placeholder="Nombre"
                                             required>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-sm-12 col-md-4">
                                         <label for="apellido1" class="form-label">Apellido 1</label>
                                         <input type="text" class="form-control" id="apellido1" placeholder="Apellido1"
                                             required>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-sm-12 col-md-4">
                                         <label for="apellido2" class="form-label">Apellido 2</label>
                                         <input type="text" class="form-control" id="apellido2" placeholder="Apellido2"
                                             required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-sm-1 col-md-4 col-lg-4">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                         <label for="fechaNacimiento" class="form-label">Fecha de
                                             Nacimiento</label>
                                         <input type="date" class="form-control" id="fechaNacimiento" min="1900-01-01"
                                             required>
                                     </div>
-                                    <div class="col-sm-1 col-md-4 col-lg-4">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
                                         <label for="telefono" class="form-label">Teléfono</label>
                                         <input type="text" class="form-control" id="telefono" placeholder="Teléfono"
                                             required>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <label for="telefono" class="form-label">DNI</label>
+                                        <input type="text" class="form-control" id="dni" placeholder="Dni"
+                                            required>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
                                         <label class="form-label">Género</label>
                                         <div class="d-flex">
                                             <div class="form-check mx-2">
@@ -140,11 +145,13 @@
                                 </div>
                             </fieldset>
                         </form>
+                    </div>
+                    <div id="registro" class="bg-body-secondary p-5 m-4 rounded-3">
                         <form>
                             <fieldset>
                                 <legend>Dirección</legend>
                                 <div class="row mb-3">
-                                    <div class="col-md-3">
+                                    <div class="col-sm-12 col-md-3">
                                         <label for="selectTipoDireccion" class="form-label">Tipo de
                                             Dirección</label>
                                         <select class="form-select" id="selectTipoDireccion" required>
@@ -154,31 +161,31 @@
                                             <option value="plaza">Plaza</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-9">
+                                    <div class="col-sm-12 col-md-9">
                                         <label for="direccion" class="form-label">Dirección</label>
                                         <input type="text" class="form-control" id="direccion" placeholder="Dirección"
                                             required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-md-2">
+                                    <div class="col-sm-12 col-md-2">
                                         <label for="numero" class="form-label">Número</label>
                                         <input type="text" class="form-control" id="numero" placeholder="Número"
                                             required>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-sm-12 col-md-2">
                                         <label for="bloque" class="form-label">Bloque</label>
                                         <input type="text" class="form-control" id="bloque" placeholder="Bloque">
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-sm-12 col-md-2">
                                         <label for="piso" class="form-label">Piso</label>
                                         <input type="text" class="form-control" id="piso" placeholder="Piso">
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-sm-12 col-md-2">
                                         <label for="letra" class="form-label">Letra</label>
                                         <input type="text" class="form-control" id="letra" placeholder="Letra">
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-sm-12 col-md-4">
                                         <label for="codigoPostal" class="form-label">Código
                                             Postal</label>
                                         <input type="text" class="form-control" id="codigoPostal" placeholder="CP"
@@ -198,25 +205,65 @@
                                     </div>
                                     <div class="col-sm-12 col-md-4 col-lg-4">
                                         <label for="exampleDataList" class="form-label">Paises</label>
-                                    <input class="form-control" list="listaPaises" id="paises" placeholder="Indica tu país">
-                                    <datalist id="listaPaises">
-                                      <option value="España">
-                                      <option value="Kazajistán">
-                                      <option value="Italia">
-                                      <option value="México">
-                                      <option value="Zimbadwe">
-                                    </datalist>
+                                        <input class="form-control" list="listaPaises" id="paises"
+                                            placeholder="Indica tu país">
+                                        <datalist id="listaPaises">
+                                            <option value="España">
+                                            <option value="Kazajistán">
+                                            <option value="Italia">
+                                            <option value="México">
+                                            <option value="Zimbadwe">
+                                        </datalist>
                                     </div>
                                 </div>
                             </fieldset>
                         </form>
                     </div>
+                    <div id="registro" class="bg-body-secondary p-5 m-4 rounded-3">
+                        <form>
+                            <fieldset>
+                                <legend>Datos de pago</legend>
+                                <div class="row mb-3">
+                                    <div class="col-sm-12 col-md-9">
+                                        <label for="nombreCompleto" class="form-label">Nombre completo del titular</label>
+                                        <input type="text" class="form-control" id="nombreCompleto" placeholder="Nombre completo"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-12 col-md-9">
+                                        <label for="numeroTrajeta" class="form-label">Número de tarjeta</label>
+                                        <input type="text" class="form-control" id="numeroTrajeta" placeholder="Número de tarjeta"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-12 col-md-3 col-lg-3">
+                                        <label for="cvv" class="form-label">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                                    </div>
+                                    <div class="col-sm-12 col-md-3 col-lg-3">
+                                        <label for="fechaCac" class="form-label">Fecha Caducidad</label>
+                                        <input type="date" class="form-control" id="fechaCac" placeholder="Fecha de caducidad" min="" max="31/12/2035">
+                                    </div>
+                                    <div class="col-sm-12 col-md-3 col-lg-3">
+                                        <label for="cp" class="form-label">CP</label>
+                                        <input type="text" class="form-control" id="cp" placeholder="Código Postal">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
 
             </div>
-            <div>
+            <div class="d-flex justify-content-center">
+                <div class="col-sm-12 col-md-3 mb-4">
                 <button type="submit" class="btn btn-primary" data-bs-target="#modalverificacion"
                     data-bs-toggle="modal">Registrarse</button>
             </div>
+            </div>
+            
         </div>
     </div>
     </div>
