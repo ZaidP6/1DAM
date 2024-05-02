@@ -31,3 +31,384 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-05-02 10:22:35.003 -----------------------------------------------
+eclipse.buildId=4.22.0.202403071427
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data C:\Users\aguilar.dimar23_tria\Desktop\1DAM\3raEval
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-05-02 10:22:36.791
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-02 10:22:37.029
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-02 10:22:38.162
+!MESSAGE Logback config file: C:\Users\aguilar.dimar23_tria\Desktop\1DAM\3raEval\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-05-02 10:22:38.628
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-02 10:22:38.628
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-05-02 10:22:38.960
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-05-02 10:22:38.960
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-05-02 10:22:42.765
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\aguilar.dimar23_tria'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.459
+!MESSAGE Classpath changed for project: Demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.460
+!MESSAGE Classpath changed for project: DemoWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.461
+!MESSAGE Classpath changed for project: e01primerholamundo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.463
+!MESSAGE Classpath changed for project: e02bucleswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.464
+!MESSAGE Classpath changed for project: e03fragmentos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.465
+!MESSAGE Classpath changed for project: e04formulario01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.466
+!MESSAGE Classpath changed for project: e05formulario02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.466
+!MESSAGE Classpath changed for project: intentoappweb01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.467
+!MESSAGE Classpath changed for project: p01springcoe
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.468
+!MESSAGE Classpath changed for project: p01springcore2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.470
+!MESSAGE Classpath changed for project: p01springcorebis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:13.471
+!MESSAGE Classpath changed for project: p01springcoreweb
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-05-02 10:23:13.971
+!MESSAGE Project prueba01 already exists
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:15.331
+!MESSAGE Classpath changed for project: p04datajpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:15.331
+!MESSAGE Classpath changed for project: p05manytoone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:15.332
+!MESSAGE Classpath changed for project: p06serviciobase
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:15.332
+!MESSAGE Classpath changed for project: p07manytomany
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:15.334
+!MESSAGE Classpath changed for project: pilaraguilartiendaonline01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:15.334
+!MESSAGE Classpath changed for project: prueba01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:15.337
+!MESSAGE Classpath changed for project: prueba02tiendaonline
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:15.338
+!MESSAGE Classpath changed for project: ud8e03buclesyswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:36.725
+!MESSAGE Classpath changed for project: Demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:36.726
+!MESSAGE Boot project ADDED: Demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:36.726
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:36.775
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-02 10:23:36.847
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\aguilar.dimar23_tria\Downloads\sts-4.22.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+C:\Users\aguilar.dimar23_tria\Downloads\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\aguilar.dimar23_tria\Downloads\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\aguilar.dimar23_tria\Downloads\sts-4.22.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.53.0.202403071323\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/aguilar.dimar23_tria/Desktop/1DAM/3raEval/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1714638216846
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:36.848
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-05-02 10:23:36.864
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 12568
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.547
+!MESSAGE Classpath changed for project: pilaraguilartiendaonline01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.551
+!MESSAGE Boot project ADDED: pilaraguilartiendaonline01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.551
+!MESSAGE Classpath changed for project: e02bucleswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.552
+!MESSAGE Boot project ADDED: e02bucleswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.553
+!MESSAGE Classpath changed for project: p04datajpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.554
+!MESSAGE Boot project ADDED: p04datajpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.555
+!MESSAGE Classpath changed for project: prueba02tiendaonline
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.555
+!MESSAGE Boot project ADDED: prueba02tiendaonline
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.556
+!MESSAGE Classpath changed for project: e03fragmentos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.556
+!MESSAGE Boot project ADDED: e03fragmentos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.556
+!MESSAGE Classpath changed for project: p07manytomany
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.557
+!MESSAGE Boot project ADDED: p07manytomany
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.557
+!MESSAGE Classpath changed for project: p01springcore2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.558
+!MESSAGE Boot project ADDED: p01springcore2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.558
+!MESSAGE Classpath changed for project: intentoappweb01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.558
+!MESSAGE Boot project ADDED: intentoappweb01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.559
+!MESSAGE Classpath changed for project: e05formulario02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.559
+!MESSAGE Boot project ADDED: e05formulario02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.559
+!MESSAGE Classpath changed for project: p01springcoreweb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:41.560
+!MESSAGE Boot project ADDED: p01springcoreweb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.114
+!MESSAGE Classpath changed for project: prueba01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.114
+!MESSAGE Boot project ADDED: prueba01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.115
+!MESSAGE Classpath changed for project: DemoWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.115
+!MESSAGE Boot project ADDED: DemoWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.115
+!MESSAGE Classpath changed for project: e01primerholamundo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.117
+!MESSAGE Boot project ADDED: e01primerholamundo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.118
+!MESSAGE Classpath changed for project: p05manytoone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.118
+!MESSAGE Boot project ADDED: p05manytoone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.119
+!MESSAGE Classpath changed for project: e04formulario01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.120
+!MESSAGE Boot project ADDED: e04formulario01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.120
+!MESSAGE Classpath changed for project: p06serviciobase
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.120
+!MESSAGE Boot project ADDED: p06serviciobase
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.121
+!MESSAGE Classpath changed for project: p01springcorebis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.122
+!MESSAGE Boot project ADDED: p01springcorebis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.122
+!MESSAGE Classpath changed for project: p01springcoe
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.123
+!MESSAGE Boot project ADDED: p01springcoe
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.123
+!MESSAGE Classpath changed for project: ud8e03buclesyswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:46.124
+!MESSAGE Boot project ADDED: ud8e03buclesyswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:49.337
+!MESSAGE Classpath changed for project: e02bucleswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:49.339
+!MESSAGE Classpath changed for project: e05formulario02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:49.339
+!MESSAGE Classpath changed for project: e03fragmentos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:49.340
+!MESSAGE Classpath changed for project: prueba01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:49.340
+!MESSAGE Classpath changed for project: Demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:49.342
+!MESSAGE Classpath changed for project: p01springcoe
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.553
+!MESSAGE Classpath changed for project: prueba01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.553
+!MESSAGE Classpath changed for project: e04formulario01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.554
+!MESSAGE Classpath changed for project: p07manytomany
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.554
+!MESSAGE Classpath changed for project: DemoWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.555
+!MESSAGE Classpath changed for project: intentoappweb01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.555
+!MESSAGE Classpath changed for project: p01springcorebis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.556
+!MESSAGE Classpath changed for project: p01springcoreweb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.556
+!MESSAGE Classpath changed for project: p04datajpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.556
+!MESSAGE Classpath changed for project: prueba02tiendaonline
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:53.557
+!MESSAGE Classpath changed for project: ud8e03buclesyswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:55.702
+!MESSAGE Classpath changed for project: p01springcore2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:55.702
+!MESSAGE Classpath changed for project: p05manytoone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:55.703
+!MESSAGE Classpath changed for project: p06serviciobase
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:55.703
+!MESSAGE Classpath changed for project: pilaraguilartiendaonline01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:23:56.415
+!MESSAGE Classpath changed for project: e01primerholamundo
+
+!ENTRY org.eclipse.egit.core 4 0 2024-05-02 10:23:57.081
+!MESSAGE creating C:\Users\aguilar.dimar23_tria\Desktop\1DAM\3raEval\.gitignore failed
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:14.535
+!MESSAGE Classpath changed for project: e01primerholamundo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:14.537
+!MESSAGE Classpath changed for project: e02bucleswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:14.539
+!MESSAGE Classpath changed for project: e03fragmentos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:14.539
+!MESSAGE Classpath changed for project: Demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:14.540
+!MESSAGE Classpath changed for project: DemoWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:16.096
+!MESSAGE Classpath changed for project: e04formulario01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:16.096
+!MESSAGE Classpath changed for project: e05formulario02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:16.097
+!MESSAGE Classpath changed for project: intentoappweb01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:16.097
+!MESSAGE Classpath changed for project: p01springcoe
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:17.634
+!MESSAGE Classpath changed for project: p01springcore2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:17.635
+!MESSAGE Classpath changed for project: p01springcorebis
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:17.635
+!MESSAGE Classpath changed for project: p01springcoreweb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:17.636
+!MESSAGE Classpath changed for project: p04datajpa
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:17.636
+!MESSAGE Classpath changed for project: p05manytoone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:19.268
+!MESSAGE Classpath changed for project: p07manytomany
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:19.268
+!MESSAGE Classpath changed for project: prueba01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:19.269
+!MESSAGE Classpath changed for project: p06serviciobase
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:19.269
+!MESSAGE Classpath changed for project: pilaraguilartiendaonline01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:20.327
+!MESSAGE Classpath changed for project: prueba02tiendaonline
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:24:20.327
+!MESSAGE Classpath changed for project: ud8e03buclesyswitch
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:26:05.508
+!MESSAGE Classpath changed for project: E06Herencia
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:26:05.508
+!MESSAGE Boot project ADDED: E06Herencia
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-05-02 10:26:07.163
+!MESSAGE Classpath changed for project: E06Herencia
