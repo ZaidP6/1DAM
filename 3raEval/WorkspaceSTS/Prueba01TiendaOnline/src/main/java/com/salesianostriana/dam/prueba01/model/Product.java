@@ -1,5 +1,9 @@
 package com.salesianostriana.dam.prueba01.model;
 
+import java.time.LocalDate;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -19,5 +23,10 @@ public class Product {
 	private double productPvP;
 	private int productStockQuantity;
 	private String productReview;
+	
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	private LocalDate productDate;
+	
+	
 	
 }
