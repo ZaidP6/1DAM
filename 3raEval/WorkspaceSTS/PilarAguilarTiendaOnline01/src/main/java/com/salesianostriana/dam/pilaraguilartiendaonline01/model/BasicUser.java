@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class BasicUser {
 	
 	@Id @GeneratedValue
-	private int basicUserId;
+	private Long basicUserId;
 	
 	private String basicUserName;
 	private String basicUserPassword;

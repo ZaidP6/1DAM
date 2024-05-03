@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class OrderLine {
 	
 	@Id @GeneratedValue
-	private int orderLineId;
+	private Long orderLineId;
 	
 	private Product orderLineProduct;
 	private int orderLineQuantity;

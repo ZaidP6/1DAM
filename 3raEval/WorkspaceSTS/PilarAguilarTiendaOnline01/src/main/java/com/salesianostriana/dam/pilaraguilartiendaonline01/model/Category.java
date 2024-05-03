@@ -1,6 +1,7 @@
 package com.salesianostriana.dam.pilaraguilartiendaonline01.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,8 +11,8 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Category {
 	
-	@Id
-	private int categoryId;
+	@Id @GeneratedValue
+	private Long categoryId;
 	private String categoryName;
 	private String categoryDescription;
 }

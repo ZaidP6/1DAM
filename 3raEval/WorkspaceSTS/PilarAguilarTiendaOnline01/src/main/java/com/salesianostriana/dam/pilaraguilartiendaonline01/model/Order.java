@@ -26,7 +26,8 @@ public class Order {
 
 	@Id
 	@GeneratedValue
-	private int orderId;
+	private Long orderId;
+	
 	
 	private Date orderDate;
 	

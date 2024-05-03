@@ -6,6 +6,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,8 +16,8 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Product {
 
-	@Id @GeneratedValue
-	private int productId;
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long productId;
 	
 	private String productName;
 	private String productDescription;
