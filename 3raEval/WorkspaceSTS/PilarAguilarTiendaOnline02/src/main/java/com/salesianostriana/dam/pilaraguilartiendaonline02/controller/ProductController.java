@@ -1,11 +1,11 @@
 package com.salesianostriana.dam.pilaraguilartiendaonline02.controller;
 
+
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-
 import com.salesianostriana.dam.pilaraguilartiendaonline02.model.Product;
 import com.salesianostriana.dam.pilaraguilartiendaonline02.service.ProductService;
 
@@ -32,7 +32,7 @@ public class ProductController {
 	 * GetMapping los dos nombres, entre comillas dobles separados por coma.
 	 * 
 	 */
-	@GetMapping({"/", "/list"})
+	@GetMapping({"/list"})
 	public String listarTodos(Model model) {
 		model.addAttribute("lista",productService.getLista());
 		return "index";
