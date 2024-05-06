@@ -90,14 +90,14 @@ public class ProductController {
 	@GetMapping("/editar/{id}")
 	public String mostrarFormularioEdicion(@PathVariable("id") long id, Model model) {
 		
-		//Buscamos al alumno por id y recordemos que el método findById del servicio, 
+		//Buscamos el producto por id y recordemos que el método findById del servicio, 
 		//devuelve el objeto buscado o null si no se encuentra.
 		 
 		
 		Product pEditar = productService.findById(id);
 		
 		if (pEditar != null) {
-			model.addAttribute("alumno", pEditar);
+			model.addAttribute("product", pEditar);
 			return "formulario";
 		} else {
 			// No existe ningún alumno con el Id proporcionado.
@@ -135,7 +135,7 @@ public class ProductController {
     public String mostrarProductos(Model model) {
         List<Product> productos = productService.showAllProducts();
         model.addAttribute("products", productos);
-        return "productos"; // Nombre de la plantilla Thymeleaf (por ejemplo, productos.html)
+        return "productos"; 
     }
 	
 	@PostMapping("/comprar")
