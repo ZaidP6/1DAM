@@ -1,12 +1,17 @@
 package com.salesianostriana.dam.pilaraguilartiendaonline02.controller;
 
 
+import java.util.List;
+
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import com.salesianostriana.dam.pilaraguilartiendaonline02.model.OrderLine;
 import com.salesianostriana.dam.pilaraguilartiendaonline02.model.Product;
+import com.salesianostriana.dam.pilaraguilartiendaonline02.repository.ProductRepository;
 import com.salesianostriana.dam.pilaraguilartiendaonline02.service.ProductService;
 
 
@@ -18,7 +23,9 @@ public class ProductController {
 	 * De las dos formas de inyectar un objeto, elegimos en esta ocasión
 	 * el objeto private y el constructor de dicho objeto
 	 * */
+	private ProductRepository productRepository;
 	private ProductService productService;
+	private OrderLine orderLine;
 	
 	public ProductController(ProductService productService) {
 		this.productService = productService;
@@ -122,5 +129,31 @@ public class ProductController {
 		productService.delete(id);
 		return "redirect:/";
 	}
+	
+	
+	@GetMapping("/productos")
+    public String mostrarProductos(Model model) {
+        List<Product> productos = productService.showAllProducts();
+        model.addAttribute("products", productos);
+        return "productos"; // Nombre de la plantilla Thymeleaf (por ejemplo, productos.html)
+    }
+	
+	@PostMapping("/comprar")
+    public String comprarProducto(Long productId, Model model) {
+		
+        // Buscar el producto en la base de datos por el id
+        Product product = productRepository.findById(productId).orElse(null);
+
+        if (product != null) {
+            product.setProductStockQuantity(product.getProductStockQuantity()- orderLine.getOrderLineQuantity());
+            model.addAttribute("productoComprado", product);
+            return "confirmacionCompra";
+        } else {
+            // Manejar el caso en el que no se encuentre el producto
+            return "errorCompra";
+        }
+    }
+	
+	
 	
 }

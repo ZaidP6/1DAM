@@ -52,4 +52,9 @@ public class ProductService
 	public void delete (long id) {
 		productRepository.deleteById(id);
 	}
+	
+	@Override
+    public List<Product> showAllProducts() {
+        return productRepository.findAll();
+    }
 }
