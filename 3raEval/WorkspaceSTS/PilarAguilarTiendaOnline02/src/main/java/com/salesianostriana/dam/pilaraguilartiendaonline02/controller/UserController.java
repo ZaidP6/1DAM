@@ -29,7 +29,7 @@ public class UserController {
 
     @PostMapping("/addCustomer")
     public String addCustomer(@ModelAttribute("customerForm") Customer customer, Model model) {
-        customerRepository.save(customer);
+        //customerRepository.save(customer);
         return "redirect:/form"; 
     }
 	
