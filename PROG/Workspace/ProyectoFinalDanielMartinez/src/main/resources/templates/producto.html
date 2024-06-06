@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/header::cabeza}"></header>
+    <main class="flex-grow-1" style="margin-top: 56px;">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img th:src="@{${producto.imagen}}" class="img-fluid" alt="Imagen del producto">
+                </div>
+                <div class="col-md-6">
+                    <h2 th:text="${producto.nombre}">Espada Aether Dao – Lila – 100 cm</h2>
+                    <p th:text="${producto.descripcion}">Epic Armoury’s Aether Dao 100 cm es un arma híbrida de látex inspirada en el «General de Armas», una espada curva tradicional en la cultura china...</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="cantidad">Cantidad:</label>
+							<input type="number" id="cantidad" name="cantidad" value="1" min="1" class="form-control">
+                        </div>
+                        <h2 th:text="'PRECIO: ' + ${#numbers.formatDecimal(producto.precio, 001, 2)} + '€'">100€</h2>
+                        <h2 class="text-danger">Para comprar debe estar registrado</h2>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+</body>
+</html>

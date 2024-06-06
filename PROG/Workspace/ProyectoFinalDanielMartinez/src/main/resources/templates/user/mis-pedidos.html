@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column min-vh-100">
+    <header th:replace="~{fragments/headeruser::cabezauser}"></header>
+
+    <main class="flex-grow-1" style="margin-top: 100px;">
+        <div class="container">
+            <h1 class="mt-5">Mis Pedidos</h1>
+            <div th:if="${pedidos.empty}">
+                <p>No tienes ningún pedido finalizado.</p>
+            </div>
+            <div th:unless="${pedidos.empty}">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Importe Total</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="pedido : ${pedidos}">
+                            <td th:text="${pedido.id}"></td>
+                            <td th:text="${pedido.fecha}"></td>
+                            <td th:text="${#numbers.formatDecimal(pedido.importeTotal, 0, 2)} + '€'"></td>
+                            <td>
+                                <a th:href="@{/user/pedidos/{id}(id=${pedido.id})}" class="btn btn-primary"><i class="bi bi-search"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer th:replace="~{fragments/footer::pie}" class="mt-auto"></footer>
+</body>
+</html>

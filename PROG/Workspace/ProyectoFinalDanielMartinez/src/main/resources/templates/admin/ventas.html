@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/headeradmin::cabezaadmin}"></header>
+    <main class="flex-grow-1" style="margin-top: 100px;">
+        <div class="container">
+            <h1 class="mt-4">Ventas</h1>
+
+            <h2 class="mt-4">Mes con más ventas</h2>
+            <p th:text="${mesConMasVentas}"></p>
+
+            <h2 class="mt-4">Producto más vendido</h2>
+            <p th:text="${productoMasVendido != null ? productoMasVendido.getNombre() : 'No hay producto más vendido'}"></p>
+
+            <h2 class="mt-4">Todas las ventas</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Importe Total</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="venta : ${ventas}">
+                        <td th:text="${venta.getId()}"></td>
+                        <td th:text="${venta.getCliente().getUsername()}"></td>
+                        <td th:text="${venta.getImporteTotal()}"></td>
+                        <td><a th:href="@{/admin/detalleVenta/{id}(id=${venta.getId()})}" class="btn btn-primary"><i class="bi bi-search"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+
+    
+</body>
+</html>

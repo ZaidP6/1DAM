@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column vh-100">
+	<header th:replace="~{fragments/headeruser::cabezauser}"></header>
+	<main class="flex-grow-1" style="margin-top: 56px;">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-9">
+	                    <h3 class="mt-5 text-center">ARMADURAS DE CUERO</h3>
+	                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+	                        <div th:each="producto : ${productos}" class="col-md-3" data-aos="fade-up">
+	                            <div class="card my-3 bg-light bg-light">
+	                                <a th:href="@{/user/productos/cuero/{id}(id=${producto.id})}">
+	                                    <img th:src="@{${producto.imagen}}" class="card-img-top img-fluid" alt="producto">
+	                                </a>
+	                                <div class="card-body">
+	                                    <h5 class="card-title" th:text="${producto.nombre}"></h5>
+	                                    <form th:action="@{/user/agregar/{id}(id=${producto.id})}" method="get">
+											<input type="hidden" name="cantidad" value="1">
+											<p class="precio" th:text="${#numbers.formatDecimal(producto.precio, 001, 2)} + '€'"></p>
+											<button type="submit" class="btn btn-success">Añadir a mi cesta</button>
+										</form>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <!-- Aside para filtrado -->
+	                    <aside>
+							<div class="container">
+								<h5>Filtrar:</h5>
+								<form th:action="@{/user/productos/cuero}" method="get">
+									<div class="mb-3">
+										<label for="orden">Ordenar por:</label>
+										<select class="form-select" id="orden" name="orden">
+											<option value="nombre_asc">Nombre A-Z</option>
+											<option value="precio_bajo">Precio más bajo primero</option>
+											<option value="precio_alto">Precio más alto primero</option>
+										</select>
+									</div>
+									<div class="mb-3">
+										<button type="submit" class="btn btn-primary">Aplicar filtro</button>
+									</div>
+								</form>
+							</div>
+						</aside>
+	                </div>
+	            </div>
+	        </div>
+	    </main>
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+</body>
+<script>
+	AOS.init();
+  </script>
+</html>

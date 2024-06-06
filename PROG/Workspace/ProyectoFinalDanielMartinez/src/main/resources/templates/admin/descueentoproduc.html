@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/headeradmin::cabezaadmin}"></header>
+
+    <main class="flex-grow-1" style="margin-top: 56px;">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="container">
+                    <h3 class="mt-5 text-center">Aplicar Descuento</h3>
+                    <form th:action="@{/admin/descuento/submit}" method="post">
+                        <input type="hidden" name="id" th:value="${productoEdit.id}" />
+                        <label for="cant">Cantidad de Descuento (%)</label>
+                        <input type="number" name="cant" min="0" max="100" step="0.01" required />
+                        <button type="submit" class="btn btn-primary">Aplicar/Revertir Descuento</button>
+                    </form>
+                           
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+</body>
+</html>

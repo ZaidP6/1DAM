@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/header::cabeza}"></header>
+    <main class="flex-grow-1" style="margin-top: 100px;">
+        <div class="container py-5">
+            <h1 class="my-4 text-center">Avisos Legales</h1>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2>Política de Privacidad</h2>
+                    <p>En Mortis Paco, valoramos y respetamos su privacidad. Nuestra política de privacidad describe cómo recopilamos, utilizamos y protegemos la información que nos proporciona al utilizar este sitio web.</p>
+                    <p>Recopilamos información personalmente identificable, como nombres, direcciones de correo electrónico, etc., solo cuando usted nos la proporciona voluntariamente al registrarse en nuestro sitio o realizar una compra. Esta información se utiliza únicamente para fines internos, como procesar pedidos, mejorar nuestros productos y servicios, y comunicarnos con usted sobre promociones y ofertas especiales.</p>
+                    <p>Valoramos la confianza que deposita en nosotros al proporcionarnos su información personal, y nos comprometemos a protegerla mediante medidas de seguridad físicas, electrónicas y administrativas.</p>
+                    <p>Puede consultar nuestra política de privacidad completa <a href="#">aquí</a>.</p>
+
+                    <h2>Términos y Condiciones</h2>
+                    <p>Al acceder y utilizar este sitio web, usted acepta cumplir con nuestros términos y condiciones. Estos términos y condiciones rigen su uso de este sitio web, así como cualquier compra que realice a través de él.</p>
+                    <p>Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento, sin previo aviso. Es su responsabilidad revisar periódicamente esta página para estar al tanto de los cambios.</p>
+                    <p>Al realizar una compra a través de nuestro sitio web, usted acepta los términos de venta, incluidos los precios, la disponibilidad de productos, los métodos de pago aceptados y los plazos de entrega. Nos esforzamos por brindar información precisa y actualizada en nuestro sitio, pero no podemos garantizar la exactitud o integridad de dicha información en todo momento.</p>
+                    <p>Para obtener más información, consulte nuestros términos y condiciones completos <a href="#">aquí</a>.</p>
+
+                    <h2>Política de Cookies</h2>
+                    <p>Utilizamos cookies en este sitio web para mejorar su experiencia de usuario. Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita nuestro sitio. Estas cookies nos permiten reconocer su dispositivo y recordar cierta información sobre sus preferencias y actividades en nuestro sitio.</p>
+                    <p>Utilizamos cookies de sesión y cookies persistentes. Las cookies de sesión se eliminan automáticamente cuando cierra su navegador, mientras que las cookies persistentes permanecen en su dispositivo durante un período de tiempo más largo.</p>
+                    <p>Puede configurar su navegador para que le avise cuando se envíen cookies, o para que rechace todas las cookies. Sin embargo, si bloquea o elimina nuestras cookies, es posible que no pueda acceder a ciertas funciones de nuestro sitio web o que su experiencia de usuario se vea afectada de alguna manera.</p>
+                    <p>Puede encontrar más detalles sobre nuestra política de cookies <a href="#">aquí</a>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+</body>
+</html>

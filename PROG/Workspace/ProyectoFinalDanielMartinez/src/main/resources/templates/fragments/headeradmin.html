@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+                xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+  
+</head>
+
+<header class="header fixed-top" th:fragment="cabezaadmin">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger position-relative">
+            <div class="container-fluid">
+                <a class="navbar-brand position-absolute top-0" th:href="@{/admin}" style="z-index: 1;">
+                    <img src="../../static/img/icono.png" th:src="@{/img/icono.png}" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav d-flex align-items-center ms-auto">
+                        <li class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownArmas" role="button" aria-expanded="false">
+                                <img src="../../static/img/espadas.png" th:src="@{/img/espadas.png}" alt="Armas" class="me-1">
+                                Armas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownArmas">
+                                <li><a class="dropdown-item" th:href="@{/admin/productos/melee}">Melee</a></li>
+                                <li><a class="dropdown-item" th:href="@{/admin/productos/distancia}">Distancia</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownArmaduras" role="button" aria-expanded="false">
+                                <img src="../../static/img/casco.png" th:src="@{/img/casco.png}" alt="Armaduras" class="me-1">
+                                Armaduras
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownArmaduras">
+                                <li><a class="dropdown-item" th:href="@{/admin/productos/metal}">Metal</a></li>
+                                <li><a class="dropdown-item" th:href="@{/admin/productos/cuero}">Cuero</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" th:href="@{/admin/productos/otros}">
+                                <img src="../../static/img/cuerno.png" th:src="@{/img/cuerno.png}" alt="Otros" class="me-1">
+                                Otros
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <form class="d-flex mx-auto">
+                        <input class="form-control me-2" type="text" placeholder="Buscar">
+                        <button class="btn btn-primary" type="button">Buscar</button>
+                    </form>
+                    <div class="dropdown me-3">
+                        <form th:action="@{/logout}" method="POST" id="logoutForm"></form>
+                        <button class="btn btn-light dropdown-toggle ms-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span sec:authentication="name">Usuario</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#" th:href="@{/admin/profile}">Mi Cuenta</a></li>
+                            <li><a class="dropdown-item" href="#" th:href= "@{/admin/ventas}">Ver Histórico</a></li>
+                            <li><a class="dropdown-item" href="#" th:href="@{/admin/descuento}">Descuentos</a></li>
+                            <li><a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+</html>

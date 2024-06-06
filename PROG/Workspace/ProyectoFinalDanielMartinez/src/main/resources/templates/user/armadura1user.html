@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/headeruser::cabezauser}"></header>
+    <main class="flex-grow-1" style="margin-top: 56px;">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="https://mortisdraco.com/wp-content/uploads/2019/10/Osric-R-stung_gr-n_FR_600x600.jpg" th:src="@{https://mortisdraco.com/wp-content/uploads/2019/10/Osric-R-stung_gr-n_FR_600x600.jpg}" class="img-fluid" alt="Imagen del producto">
+                </div>
+                <div class="col-md-6">
+                    <h2>Armadura de cuero Osric – Verde (Ed. Limitada)</h2>
+                    <p>La Armadura de Cuero Osric es una variante de la popular vesta «Justus» de Mytholon. En esta versión, la vesta está reforzada con placas de cuero rígido remachado de 3 mm de grosor, lo que hace que la vesta no sólo sea cómoda y ágil, sino que además proporciona una buena protección. Gracias a los cordones de los lados, la vesta puede ajustarse al cuerpo de quien la lleve. Ya que se trata de una Edición Limitada, es una gran oportunidad para montaraces y elfos de obtener una Justus en color verde oscuro. ¡Consigue el tuyo mientras duren las existencias!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="talla">Talla:</label>
+                            <select id="talla" name="talla" class="form-control">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidad">Cantidad:</label>
+                            <input type="number" id="cantidad" name="cantidad" value="1" min="1" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success">Añadir al carrito</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+</body>
+</html>

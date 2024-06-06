@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column min-vh-100">
+    <header th:replace="~{fragments/headeradmin::cabezaadmin}"></header>
+
+    <main class="flex-grow-1" style="margin-top: 100px;">
+        <div class="container">
+            <h1 class="mt-5">Detalles del Pedido</h1>
+            <div>
+                <h3>Pedido ID: <span th:text="${pedido.id}"></span></h3>
+                <p>Fecha: <span th:text="${pedido.fecha}"></span></p>
+                <p>Importe Total: <span th:text="${#numbers.formatDecimal(pedido.importeTotal, 0, 2)} + '€'"></span></p>
+                <p>Gastos de Envío: <span th:text="${#numbers.formatDecimal(pedido.gastosEnvio, 0, 2)} + '€'"></span></p>
+                <h4>Productos</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio Unitario</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="linea : ${pedido.lineas}">
+                            <td th:text="${linea.producto.nombre}"></td>
+                            <td th:text="${linea.cantidad}"></td>
+                            <td th:text="${#numbers.formatDecimal(linea.producto.precio, 0, 2)} + '€'"></td>
+                            <td th:text="${#numbers.formatDecimal(linea.getTotalLinea(), 0, 2)} + '€'"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer th:replace="~{fragments/footer::pie}" class="mt-auto"></footer>
+</body>
+</html>

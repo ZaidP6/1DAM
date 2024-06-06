@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+	<head>
+	  
+	</head>
+
+	<header class="header fixed-top" th:fragment="cabeza">
+	        <nav class="navbar navbar-expand-sm navbar-dark bg-danger position-relative">
+	            <div class="container-fluid">
+	                <a class="navbar-brand position-absolute top-0" th:href="@{/}" style="z-index: 1;">
+	                    <img src="../../static/img/icono.png" th:src="@{/img/icono.png}" alt="logo">
+	                </a>
+	                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+	                    <span class="navbar-toggler-icon"></span>
+	                </button>
+	                <div class="collapse navbar-collapse" id="mynavbar">
+	                    <ul class="navbar-nav d-flex align-items-center ms-auto">
+	                        <li class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+	                            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownArmas" role="button" aria-expanded="false">
+	                                <img src="../../static/img/espadas.png" th:src="@{/img/espadas.png}" alt="Armas" class="me-1">
+	                                Armas
+	                            </a>
+	                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownArmas">
+	                                <li><a class="dropdown-item" th:href="@{/melee}">Melee</a></li>
+	                                <li><a class="dropdown-item" th:href= "@{/distancia}">Distancia</a></li>
+	                            </ul>
+	                        </li>
+	                        <li class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+	                            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownArmaduras" role="button" aria-expanded="false">
+	                                <img src="../../static/img/casco.png" th:src="@{/img/casco.png}" alt="Armaduras" class="me-1">
+	                                Armaduras
+	                            </a>
+	                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownArmaduras">
+	                                <li><a class="dropdown-item" th:href="@{/metal}">Metal</a></li>
+	                                <li><a class="dropdown-item" th:href="@{/cuero}">Cuero</a></li>
+	                            </ul>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link text-white" th:href="@{/otros}">
+	                                <img src="../../static/img/cuerno.png" th:src="@{/img/cuerno.png}" alt="Otros" class="me-1">
+	                                Otros
+	                            </a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link text-white" th:href="@{/quienessomos}">
+	                                <img src="../../static/img/quienes-somos.png" th:src="@{/img/quienes-somos.png}" alt="Quienes Somos" class="me-1">
+	                                Quienes Somos
+	                            </a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link text-white" th:href="@{/avisoslegales}">
+	                                <img src="../../static/img/avisos-legales.png" th:src="@{/img/avisos-legales.png}" alt="Avisos Legales" class="me-1">
+	                                Avisos Legales
+	                            </a>
+	                        </li>
+	                    </ul>
+	                    
+	                    <form class="d-flex mx-auto" th:action="@{/busqueda}" method="get">
+	                        <input class="form-control me-2" name="nombre" type="text" placeholder="Buscar">
+	                        <button class="btn btn-primary" type="button">Buscar</button>
+	                    </form>
+	                    <a class="btn btn-light ms-2" th:href="@{/login}" >LOGIN</a>
+	                </div>
+	            </div>
+	        </nav>
+	        
+	    </header>
+	
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/header::cabeza}"></header>
+    <main class="flex-grow-1" style="margin-top: 100px;">
+        <div class="container py-5">
+            <h1 class="my-4 text-center">Quienes Somos</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/yq3A2DARnjA" title="Rol en vivo |Spot X Feria del Dragón 2023 | Larp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">Bienvenidos a <strong>Mortis Paco</strong>, tu tienda de referencia en productos medievales y rol en vivo. Desde nuestra fundación, hemos tenido un solo objetivo: proporcionar a nuestros clientes los mejores productos para hacer realidad sus fantasías medievales y de rol en vivo.</p>
+                    <p>En <strong>Mortis Paco</strong>, nos apasiona el mundo medieval y el rol en vivo. Ofrecemos una amplia gama de productos, desde armas y armaduras, hasta accesorios y vestimentas, todo lo necesario para que tu experiencia de rol sea lo más auténtica posible.</p>
+                    <p>Nuestro equipo está compuesto por expertos y entusiastas del rol en vivo, siempre dispuestos a asesorarte y ayudarte a encontrar lo que necesitas. Nos enorgullece ofrecer productos de alta calidad y un servicio al cliente excepcional.</p>
+                    <p>Únete a nuestra comunidad y descubre un mundo lleno de aventuras, batallas épicas y leyendas medievales. ¡Te esperamos en <strong>Mortis Paco</strong>!</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h2 class="text-center">Nuestra Misión</h2>
+                    <p>Nuestra misión es proporcionar a los aficionados al rol en vivo y a la recreación medieval los mejores productos y servicios, fomentando una comunidad inclusiva y apasionada por la historia y la fantasía.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/header::cabeza}"></header>
+    <main class="flex-grow-1" style="margin-top: 100px;">
+        <iframe width="1903" height="784" src="https://www.youtube.com/embed/OgIRAjnnJzI?start=10" title="Soy programador fp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+    </main>
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/headeradmin::cabezaadmin}"></header>
+    <main class="flex-grow-1" style="margin-top: 56px;">
+        <div class="container d-flex">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <h3 class="mt-5 text-center">DESCUENTOS</h3>
+                    <div class="text-center">
+                        <form th:action="@{/admin/liquidacion}" method="post">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-bag-plus-fill"></i> Poner / Quitar de Liquidación
+                            </button>
+                        </form>                        
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
+                        <div th:each="producto, iterStat : ${productos}" class="col-md-3" data-aos="fade-up">
+                            <div class="card my-3 bg-light">
+                                <img th:src="@{${producto.imagen}}" class="card-img-top img-fluid" alt="producto">
+                                <div class="card-body">
+                                    <h5 class="card-title" th:text="${producto.nombre}"></h5>
+                                    <p class="precio" th:text="${#numbers.formatDecimal(producto.precio, 0, 2)} + '€'"></p>
+                                    <div class="btn-group" role="group">
+                                        <a th:href="@{/admin/descuento/{id}(id=${producto.id})}">
+                                            <button type="button" class="btn btn-success">
+                                                <i class="bi bi-percent"></i>Aplicar Descuento<i class="bi bi-percent"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

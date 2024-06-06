@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/headeradmin::cabezaadmin}"></header>
+    <main class="flex-grow-1" style="margin-top: 56px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h3 class="mt-5 text-center">ARMAS A DISTANCIA</h3>
+                    <div class="text-center">
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agregarProductoModal">
+							<i class="bi bi-bag-plus-fill"></i> Agregar Producto
+						</button>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                        <div th:each="producto, iterStat : ${productos}" class="col-md-3">
+                            <div class="card my-3 bg-light">
+                                <a th:href="@{/admin/productos/distancia/{id}(id=${producto.id})}">
+                                    <img th:src="@{${producto.imagen}}" class="card-img-top img-fluid" alt="producto">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title" th:text="${producto.nombre}"></h5>
+                                    <p class="precio" th:text="${#numbers.formatDecimal(producto.precio, 001, 2)} + '€'"></p>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" th:data-bs-target="'#confirmarEliminarProductoModal_' + ${iterStat.index}">&emsp;<i class="bi bi-trash3-fill"></i>&emsp;</button>
+                                        <div class="modal fade" th:id="'confirmarEliminarProductoModal_' + ${iterStat.index}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Confirmar Eliminación</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="d-flex">
+                                                            <p>Está a punto de eliminar:&ensp;</p>
+                                                            <p th:text="${producto.nombre}"></p>
+                                                        </div>
+                                                        <p>¿Está seguro?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                        <!-- Formulario de eliminación -->
+                                                        <form th:action="@{/admin/productos/distancia/eliminarProducto/{id}(id=${producto.id})}" method="post">
+                                                            <input type="hidden" name="_method" value="POST" />
+                                                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a th:href="@{/admin/productos/editar/{id}(id=${producto.id})}">
+                                            <button type="button" class="btn btn-primary">&emsp;<i class="bi bi-pencil-fill"></i>&emsp;</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                	</div>
+                <div class="col-md-3">
+                    <!-- Aside para filtrado -->
+                    <aside>
+                        <div class="container">
+                            <h5>Filtrar:</h5>
+                            <form th:action="@{/admin/productos/distancia}" method="get">
+                                <div class="mb-3">
+                                    <label for="orden">Ordenar por:</label>
+                                    <select class="form-select" id="orden" name="orden">
+                                        <option value="nombre_asc">Nombre A-Z</option>
+                                        <option value="precio_bajo">Precio más bajo primero</option>
+                                        <option value="precio_alto">Precio más alto primero</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <button type="submit" class="btn btn-primary">Aplicar filtro</button>
+                                </div>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+    <!-- Formulario para agregar producto -->
+    <div class="modal fade" id="agregarProductoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar Nuevo Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                <form th:action="@{/admin/productos/distancia/guardarProducto}" th:object="${producto}" method="post">
+                
+                    <div class="mb-3">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" th:field="*{nombre}" placeholder="Ingrese el nombre del producto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="descripcion">Descripción:</label>
+                        <textarea class="form-control" id="descripcion" name="descripcion" th:field="*{descripcion}" rows="3" placeholder="Ingrese una descripción del producto"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="stock">Stock:</label>
+                        <input type="number" class="form-control" id="stock" name="stock" th:field="*{stock}" placeholder="Ingrese el stock disponible">
+                    </div>
+                    <div class="mb-3">
+                        <label for="precio">Precio:</label>
+                        <input type="number" class="form-control" id="precio" min="0" name="precio" th:field="*{precio}" placeholder="Ingrese el precio del producto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="imagen">Imagen (URL):</label>
+                        <input type="text" class="form-control" id="imagen" name="imagen" th:field="*{imagen}" placeholder="Ingrese la URL de la imagen">
+                    </div>
+					<input type="hidden" name="categoria.id" value="2" />
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Agregar Producto</button>
+                    </div>
+                </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/headeradmin::cabezaadmin}"></header>
+
+    <main class="flex-grow-1" style="margin-top: 56px;">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="container">
+                    <h3 class="mt-5 text-center">Editar Producto</h3>
+                    <form th:action="@{/admin/productos/editar/submit}" th:object="${productoEdit}" method="post">
+                        <input th:if="${productoEdit.id != 0}" type="hidden" name="id" th:field="*{id}" />
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" th:field="*{nombre}" name="nombre" placeholder="Ingrese el nombre del producto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Descripción:</label>
+                            <textarea class="form-control" id="descripcion" th:field="*{descripcion}" name="descripcion" rows="3" placeholder="Ingrese una descripción del producto" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="stock" class="form-label">Stock:</label>
+                            <input type="number" class="form-control" id="stock" th:field="*{stock}" name="stock" placeholder="Ingrese el stock disponible" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="precio" class="form-label">Precio:</label>
+                            <input type="number" class="form-control" id="precio" th:field="*{precio}" min="0" name="precio" placeholder="Ingrese el precio del producto" step="0.01" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="imagen" class="form-label">Imagen (URL):</label>
+                            <input type="text" class="form-control" id="imagen" th:field="*{imagen}" name="imagen" placeholder="Ingrese la URL de la imagen" required>
+                        </div>
+                        <input type="hidden" name="categoria.id" th:field="*{categoria.id}"/>
+                        <input type="hidden" name="descuento" data-th-field="*{descuento}">
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+</body>
+</html>

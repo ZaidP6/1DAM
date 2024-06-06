@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head::head}"></head>
+<body class="d-flex flex-column vh-100">
+    <header th:replace="~{fragments/headeradmin::cabezaadmin}"></header>
+    <main class="flex-grow-1 d-flex justify-content-center align-items-center" style="margin-top: 56px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="bg-light p-4">
+                        <h4 class="mb-4">Opciones</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#" th:href= "@{/admin/ventas}">Ver Histórico</a></li>
+                            <li class="list-group-item"><a href="#" th:href="@{/admin/descuento}">Descuentos</a></li>
+                            <li class="list-group-item"><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar Sesión</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-9">
+                    <h2 class="mb-4">Mi cuenta</h2>
+                    <div id="userData" th:object="${admin}">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Nombre de usuario</th>
+                                <td th:text="${admin.username}"></td>
+                            </tr>
+                            <tr>
+                                <th>Nombre</th>
+                                <td th:text="${admin.nombre}"></td>
+                            </tr>
+                            <tr>
+                                <th>Apellidos</th>
+                                <td th:text="${admin.apellidos}"></td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td th:text="${admin.email}"></td>
+                            </tr>
+                            <tr>
+                                <th>Dirección</th>
+                                <td th:text="${admin.direccion}"></td>
+                            </tr>
+                            <tr>
+                                <th>Contraseña</th>
+                                <td><input type="password" class="form-control" value="${admin.password}" disabled></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button id="editarPerfilBtn" class="btn btn-primary mb-4">Editar perfil</button>
+                    
+                    <form th:object="${admin}" th:action="@{/admin/profileEdit/submit}" id="editarPerfilForm" style="display: none;" method="post">
+                        <input type="hidden" th:field="*{id}" />
+                        <div class="mb-3">
+                            <label for="nombreEdit">Nombre de usuario:</label>
+                            <input type="text" class="form-control" id="usernameEdit" th:field="*{username}" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombreEdit">Nombre:</label>
+                            <input type="text" class="form-control" id="nombreEdit" th:field="*{nombre}" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellidosEdit">Apellidos:</label>
+                            <input type="text" class="form-control" id="apellidosEdit" th:field="*{apellidos}" placeholder="Apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailEdit">Email:</label>
+                            <input type="email" class="form-control" id="emailEdit" th:field="*{email}" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccionEdit">Dirección:</label>
+                            <input type="text" class="form-control" id="direccionEdit" th:field="*{direccion}" placeholder="Dirección">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordEdit">Contraseña:</label>
+                            <input type="password" class="form-control" id="passwordEdit" th:field="*{password}" placeholder="Contraseña">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/footer::pie}"></footer>
+</body>
+<script src="../../static/js/formularioperfil.js" th:src="@{/js/formularioperfil.js}" defer></script>
+</html>
